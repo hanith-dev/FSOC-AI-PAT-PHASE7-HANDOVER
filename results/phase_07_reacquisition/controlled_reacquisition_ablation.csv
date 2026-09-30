@@ -1,0 +1,33 @@
+test_id,test_name,search_mode,success,latency_s,angular_travel_deg,points_commanded,final_search_stage,confidence_region,fov_clipped
+R01,Short centered dropout,fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R01,Short centered dropout,covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False
+R02,Horizontal uncertainty ellipse,fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R02,Horizontal uncertainty ellipse,covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False
+R03,Vertical uncertainty ellipse,fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R03,Vertical uncertainty ellipse,covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False
+R04,Rotated ellipse (+45 deg),fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R04,Rotated ellipse (+45 deg),covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False
+R05,Small covariance (tight),fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R05,Small covariance (tight),covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False
+R06,Large covariance (broad),fixed_spiral,True,0.14,0.3975,8,fixed_spiral,none,False
+R06,Large covariance (broad),covariance_ellipse_scan,True,0.38,1.1288,20,middle_ellipse,2_sigma,False
+R07,Ellipse partially outside FOV,fixed_spiral,False,,5.0314,100,fixed_spiral,none,False
+R07,Ellipse partially outside FOV,covariance_ellipse_scan,False,,9.4069,100,bounded_fallback,fallback,True
+R08,Target near ellipse boundary (1.8-sigma),fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R08,Target near ellipse boundary (1.8-sigma),covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False
+R09,Target outside initial ellipse (2.3-sigma),fixed_spiral,True,0.04,0.1323,3,fixed_spiral,none,False
+R09,Target outside initial ellipse (2.3-sigma),covariance_ellipse_scan,True,0.28,0.3135,15,inner_ellipse,1_sigma,False
+R10,Covariance growth during search,fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R10,Covariance growth during search,covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False
+R11,Stale CA6 prediction (>trust horizon),fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R11,Stale CA6 prediction (>trust horizon),covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False
+R12,Distractor inside ellipse,fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R12,Distractor inside ellipse,covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False
+R13,True target + distractor both inside,fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R13,True target + distractor both inside,covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False
+R14,Failed local reacquisition (timeout),fixed_spiral,False,,5.0314,100,fixed_spiral,none,False
+R14,Failed local reacquisition (timeout),covariance_ellipse_scan,False,,5.5371,100,bounded_fallback,fallback,False
+R15,Reacquisition after expansion (99%),fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R15,Reacquisition after expansion (99%),covariance_ellipse_scan,True,0.28,0.2908,15,inner_ellipse,1_sigma,False
+R16,Deterministic repeatability,fixed_spiral,True,0.0,0.0,1,fixed_spiral,none,False
+R16,Deterministic repeatability,covariance_ellipse_scan,True,0.0,0.0469,1,inner_ellipse,1_sigma,False

@@ -1,0 +1,24 @@
+{
+  "platform_vibration": {
+    "intensity": 0,
+    "frequency_hz": 10.0,
+    "amplitude_px": 5.0
+  },
+  "camera_jitter": {
+    "intensity": 0,
+    "probability": 0.1,
+    "max_jump_px": 20.0
+  },
+  "image_noise": {
+    "intensity": 0
+  },
+  "blur": {
+    "intensity": 0
+  },
+  "atmospheric_turbulence": {
+    "intensity": 0
+  },
+  "illumination_variation": {
+    "intensity": 0
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "simulation_time": 0.48,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "SEARCH",
+    "to_state": "CANDIDATE",
+    "angular_error_deg": 5.3381
+  },
+  {
+    "simulation_time": 0.5,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "CANDIDATE",
+    "to_state": "ACQUIRE",
+    "angular_error_deg": 5.3169
+  },
+  {
+    "simulation_time": 0.52,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "ACQUIRE",
+    "to_state": "TRACK",
+    "angular_error_deg": 5.2796
+  },
+  {
+    "simulation_time": 0.56,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "TRACK",
+    "to_state": "COAST",
+    "angular_error_deg": 5.2275
+  },
+  {
+    "simulation_time": 0.78,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "COAST",
+    "to_state": "REACQUIRE",
+    "angular_error_deg": 5.0712
+  },
+  {
+    "simulation_time": 1.46,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "REACQUIRE",
+    "to_state": "SEARCH",
+    "angular_error_deg": 4.7828
+  },
+  {
+    "simulation_time": 1.48,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "SEARCH",
+    "to_state": "CANDIDATE",
+    "angular_error_deg": 4.6509
+  },
+  {
+    "simulation_time": 1.5,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "CANDIDATE",
+    "to_state": "ACQUIRE",
+    "angular_error_deg": 4.6423
+  },
+  {
+    "simulation_time": 1.52,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "ACQUIRE",
+    "to_state": "TRACK",
+    "angular_error_deg": 4.5909
+  },
+  {
+    "simulation_time": 1.56,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "TRACK",
+    "to_state": "COAST",
+    "angular_error_deg": 4.4114
+  },
+  {
+    "simulation_time": 1.78,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "COAST",
+    "to_state": "REACQUIRE",
+    "angular_error_deg": 3.5761
+  },
+  {
+    "simulation_time": 2.34,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "REACQUIRE",
+    "to_state": "SEARCH",
+    "angular_error_deg": 1.0343
+  }
+]

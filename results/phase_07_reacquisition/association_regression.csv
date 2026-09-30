@@ -1,0 +1,8 @@
+scenario,fixed_spiral_false_lock_duration_s,cov_ellipse_false_lock_duration_s,fixed_spiral_identity_switches,cov_ellipse_identity_switches,safety_preserved
+S00_nominal,0.0,0.0,0,0,True
+S09_temporary_dropout,0.0,0.0,5,5,False
+S10_fov_exit_reentry,0.0,0.0,0,0,True
+S12_moving_distractor,5.12,5.12,35,35,False
+S13_crossing_distractor,0.0,0.0,45,55,False
+S14_brighter_distractor,0.0,0.0,0,10,False
+S15_combined_stress,0.0,0.0,23,23,False

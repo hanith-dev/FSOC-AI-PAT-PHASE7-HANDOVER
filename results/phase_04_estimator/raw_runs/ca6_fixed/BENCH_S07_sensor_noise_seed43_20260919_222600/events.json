@@ -1,0 +1,23 @@
+[
+  {
+    "simulation_time": 0.0,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "SEARCHING",
+    "to_state": "DETECTED",
+    "angular_error_deg": 3.0381
+  },
+  {
+    "simulation_time": 0.02,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "DETECTED",
+    "to_state": "ACQUIRING",
+    "angular_error_deg": 2.9401
+  },
+  {
+    "simulation_time": 1.08,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "ACQUIRING",
+    "to_state": "TRACKING",
+    "angular_error_deg": 0.4982
+  }
+]

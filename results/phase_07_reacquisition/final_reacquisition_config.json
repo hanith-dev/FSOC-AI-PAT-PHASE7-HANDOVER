@@ -1,0 +1,40 @@
+{
+  "pattern_type": "covariance_ellipse_scan",
+  "scan_rate_deg_s": 2.5,
+  "angular_step_deg": 0.35,
+  "max_local_radius_deg": 2.5,
+  "max_duration_s": 2.0,
+  "trust_horizon_s": 0.35,
+  "chi2_progression": [
+    1.0,
+    2.0,
+    2.4477,
+    3.0349
+  ],
+  "confidence_progression": [
+    "1_sigma",
+    "2_sigma",
+    "95_percent",
+    "99_percent",
+    "fallback_bound"
+  ],
+  "fov_clipping": true,
+  "fov_margin_px": 10.0,
+  "min_axis_px": 4.0,
+  "camera_calibration": {
+    "width": 640,
+    "height": 480,
+    "vfov_deg": 7.5,
+    "hfov_deg": 9.988928,
+    "fx": 3661.723149,
+    "fy": 3661.723149,
+    "cx": 320.0,
+    "cy": 240.0
+  },
+  "controller_authority": {
+    "max_rate_deg_s": 60.0,
+    "accel_clamping_active": false,
+    "jerk_clamping_active": false
+  },
+  "status": "FROZEN_PRODUCTION_CERTIFIED"
+}

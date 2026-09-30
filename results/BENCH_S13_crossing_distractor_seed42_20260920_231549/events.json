@@ -1,0 +1,93 @@
+[
+  {
+    "simulation_time": 0.42,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "SEARCH",
+    "to_state": "CANDIDATE",
+    "angular_error_deg": 5.3404
+  },
+  {
+    "simulation_time": 0.44,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "CANDIDATE",
+    "to_state": "ACQUIRE",
+    "angular_error_deg": 5.2785
+  },
+  {
+    "simulation_time": 0.46,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "ACQUIRE",
+    "to_state": "TRACK",
+    "angular_error_deg": 4.8505
+  },
+  {
+    "simulation_time": 4.68,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "TRACK",
+    "to_state": "COAST",
+    "angular_error_deg": 0.7094
+  },
+  {
+    "simulation_time": 4.88,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "COAST",
+    "to_state": "REACQUIRE",
+    "angular_error_deg": 0.6919
+  },
+  {
+    "simulation_time": 4.92,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "REACQUIRE",
+    "to_state": "TRACK",
+    "angular_error_deg": 0.8224
+  },
+  {
+    "simulation_time": 5.34,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "TRACK",
+    "to_state": "COAST",
+    "angular_error_deg": 0.4518
+  },
+  {
+    "simulation_time": 5.54,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "COAST",
+    "to_state": "REACQUIRE",
+    "angular_error_deg": 0.4134
+  },
+  {
+    "simulation_time": 6.76,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "REACQUIRE",
+    "to_state": "SEARCH",
+    "angular_error_deg": 6.7991
+  },
+  {
+    "simulation_time": 6.78,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "SEARCH",
+    "to_state": "CANDIDATE",
+    "angular_error_deg": 3.1614
+  },
+  {
+    "simulation_time": 6.8,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "CANDIDATE",
+    "to_state": "ACQUIRE",
+    "angular_error_deg": 3.0524
+  },
+  {
+    "simulation_time": 6.84,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "ACQUIRE",
+    "to_state": "REACQUIRE",
+    "angular_error_deg": 2.8342
+  },
+  {
+    "simulation_time": 6.94,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "REACQUIRE",
+    "to_state": "TRACK",
+    "angular_error_deg": 2.1503
+  }
+]

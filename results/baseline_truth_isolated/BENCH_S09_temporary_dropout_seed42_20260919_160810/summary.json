@@ -1,0 +1,52 @@
+{
+  "summary_pairing": {
+    "rms_angular_error_deg": 1.4634,
+    "rms_pixel_error_px": 61.762,
+    "accepted_measurement_coverage_pct": 83.67,
+    "paired_metric_note": "CRITICAL: Tracking error must always be paired with coverage percentage."
+  },
+  "perception": {
+    "detection_precision": 0.998,
+    "detection_recall": 1.0,
+    "accepted_measurement_coverage_pct": 83.67,
+    "false_positive_count": 1,
+    "false_negative_count": 0,
+    "total_detections": 502
+  },
+  "tracking": {
+    "rms_pixel_error_px": 61.762,
+    "p95_pixel_error_px": 109.288,
+    "maximum_pixel_error_px": 313.936,
+    "rms_angular_error_deg": 1.4634,
+    "p95_angular_error_deg": 3.7457,
+    "maximum_angular_error_deg": 6.0478,
+    "severe_outlier_count_gt_5px": 577
+  },
+  "lock": {
+    "acquisition_time_s": null,
+    "lock_retention_pct": 22.75,
+    "target_loss_count": 1
+  },
+  "recovery": {
+    "reacquisition_time_s": "NOT YET AVAILABLE",
+    "reacquisition_capability": "NOT YET AVAILABLE"
+  },
+  "association": {
+    "false_lock_event_count": 0,
+    "false_lock_duration_s": 0.0,
+    "identity_switch_count": 1
+  },
+  "control": {
+    "rms_commanded_angular_velocity_deg_s": 2.049,
+    "rms_angular_acceleration_deg_s2": 87.081,
+    "rms_angular_jerk_deg_s3": 7574.784,
+    "actuator_saturation_pct": 0.17
+  },
+  "performance": {
+    "detector_mean_latency_ms": 0.875,
+    "detector_p95_latency_ms": 1.192,
+    "total_pipeline_mean_latency_ms": 0.997,
+    "total_pipeline_p95_latency_ms": 1.364,
+    "benchmark_throughput_fps": 1002.6
+  }
+}

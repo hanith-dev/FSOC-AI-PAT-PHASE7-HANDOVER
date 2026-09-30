@@ -1,0 +1,29 @@
+{
+  "experiment_id": "BENCH_S00_nominal_seed43_20260929_210432",
+  "scenario": "S00_nominal",
+  "scenario_name": "S00 Nominal Static",
+  "seed": 43,
+  "git_commit": "7a05565327f5153006a835a6df7ec87ff6fe3cdf",
+  "timestamp": "20260929_210432",
+  "simulation_dt": 0.02,
+  "simulation_duration": 12.0,
+  "total_frames": 600,
+  "algorithm_configuration": {
+    "detector": "OpenCVDetector (HSV)",
+    "localization_mode": "weighted_centroid",
+    "association_mode": "robust_multifeature",
+    "association": "AssociationEngine (robust_multifeature)",
+    "estimator": "KalmanFilter2D (ca6_adaptive_r)",
+    "controller": "GimbalController (filtered_pid)",
+    "controller_mode": "filtered_pid",
+    "injected_latency_s": 0.0,
+    "fsm": "PATLifecycleStateMachine (new_pat_fsm)",
+    "reacquisition_search": "fixed_spiral"
+  },
+  "runtime_environment": {
+    "os": "Windows 11",
+    "python_version": "3.12.10",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "machine": "AMD64"
+  }
+}

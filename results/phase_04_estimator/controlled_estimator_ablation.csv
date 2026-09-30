@@ -1,0 +1,46 @@
+sequence_id,mode,description,pos_rmse_px,vel_rmse_px_s,acc_rmse_px_s2,pred_20ms_rmse_px,pred_100ms_rmse_px,pred_200ms_rmse_px,pred_500ms_rmse_px,median_nis,p95_nis,fraction_in_chi2_95,fraction_in_chi2_99,mean_latency_us
+K01_stationary,cv4_fixed,"Stationary target at [320, 240]",0.309,2.886,0.0,0.353,0.556,0.83,1.682,0.356,1.316,1.0,1.0,98.92
+K02_constant_velocity,cv4_fixed,"Constant velocity [100, 50] px/s",0.527,10.546,0.0,0.68,1.447,2.476,5.621,0.877,3.271,0.966,1.0,79.05
+K03_constant_acceleration,cv4_fixed,"Constant acceleration [200, 100] px/s^2",10.421,73.077,223.607,11.873,18.505,28.68,72.139,53.48,452.098,0.224,0.259,66.55
+K04_sinusoidal_acceleration,cv4_fixed,1 Hz sinusoidal orbital acceleration,86.645,736.217,4009.138,98.164,152.28,244.803,743.823,8715.131,20657.831,0.069,0.069,81.92
+K05_direction_reversal,cv4_fixed,Direction reversal at 1500 px/s^2,20.887,138.04,622.841,23.385,34.721,52.625,138.723,511.383,1141.976,0.328,0.345,77.49
+K06_noisy_constant_velocity,cv4_fixed,Constant velocity with sigma=2.5px noise,1.088,28.351,0.0,1.548,3.699,6.5,14.981,8.658,35.521,0.379,0.5,76.45
+K07_noisy_acceleration,cv4_fixed,Acceleration with sigma=2.0px noise,16.07,110.348,335.41,18.272,28.328,43.745,109.478,136.719,1021.844,0.138,0.207,71.88
+K08_0_5s_dropout,cv4_fixed,0.5s dropout during accelerated motion,11.724,60.952,150.0,12.83,17.919,25.689,57.969,19.211,142.886,0.406,0.406,131.58
+K09_1_5s_dropout,cv4_fixed,1.5s extended dropout testing covariance growth,1.958,5.093,0.0,2.0,2.206,2.532,3.764,1.006,2.419,1.0,1.0,96.47
+K10_variable_dt,cv4_fixed,Variable sampling interval (12ms - 28ms),5.749,39.831,120.0,6.539,10.148,15.685,39.29,19.424,161.032,0.379,0.448,165.96
+K11_low_quality_high_r,cv4_fixed,Low-quality degraded detections with 4px sigma,2.506,32.18,0.0,2.953,5.173,8.243,17.77,21.57,94.525,0.155,0.224,131.89
+K12_high_quality_low_r,cv4_fixed,High-SNR subpixel detections with 0.05px sigma,0.036,0.602,0.0,0.044,0.086,0.144,0.323,0.004,0.018,1.0,1.0,250.14
+K13_abrupt_maneuver,cv4_fixed,Sharp 90-degree velocity direction change,15.364,104.912,0.0,17.182,24.899,34.986,66.007,303.543,585.213,0.397,0.397,104.88
+K14_transient_outlier,cv4_fixed,Single-frame 50px localized outlier,0.501,9.801,0.0,0.643,1.353,2.309,5.231,0.87,3.809,1.0,1.0,70.03
+K15_crossing_ambiguity_coast,cv4_fixed,3-frame prediction-only coast at crossing ambiguity,0.502,9.538,0.0,0.592,1.214,2.124,4.955,0.978,4.387,1.0,1.0,69.79
+K01_stationary,ca6_fixed,"Stationary target at [320, 240]",0.325,4.067,18.938,0.388,0.729,1.324,4.204,0.323,1.262,1.0,1.0,64.85
+K02_constant_velocity,ca6_fixed,"Constant velocity [100, 50] px/s",0.62,11.791,37.593,0.802,1.741,3.177,9.222,0.883,3.237,0.983,1.0,113.78
+K03_constant_acceleration,ca6_fixed,"Constant acceleration [200, 100] px/s^2",0.762,10.554,102.55,0.943,2.069,4.392,17.508,1.019,4.116,0.983,1.0,139.76
+K04_sinusoidal_acceleration,ca6_fixed,1 Hz sinusoidal orbital acceleration,20.179,462.762,4719.962,29.722,86.427,199.328,820.404,644.804,1269.626,0.069,0.069,77.36
+K05_direction_reversal,ca6_fixed,Direction reversal at 1500 px/s^2,2.892,59.402,657.68,4.037,11.032,25.497,108.108,3.69,37.187,0.552,0.586,62.86
+K06_noisy_constant_velocity,ca6_fixed,Constant velocity with sigma=2.5px noise,1.725,32.203,76.241,2.264,4.899,8.749,23.701,9.295,34.436,0.328,0.483,68.23
+K07_noisy_acceleration,ca6_fixed,Acceleration with sigma=2.0px noise,1.687,21.418,134.116,2.077,4.199,8.008,27.238,5.829,28.57,0.517,0.741,74.19
+K08_0_5s_dropout,ca6_fixed,0.5s dropout during accelerated motion,3.095,14.725,65.241,3.341,4.512,6.436,15.77,0.827,2.792,1.0,1.0,46.58
+K09_1_5s_dropout,ca6_fixed,1.5s extended dropout testing covariance growth,29.232,45.935,47.486,30.122,33.846,38.878,56.571,1.105,2.432,1.0,1.0,32.28
+K10_variable_dt,ca6_fixed,Variable sampling interval (12ms - 28ms),0.699,8.174,54.348,0.842,1.626,3.084,10.696,0.744,3.341,1.0,1.0,96.05
+K11_low_quality_high_r,ca6_fixed,Low-quality degraded detections with 4px sigma,3.401,40.39,128.93,4.045,7.312,12.472,34.628,17.788,82.1,0.172,0.207,97.35
+K12_high_quality_low_r,ca6_fixed,High-SNR subpixel detections with 0.05px sigma,0.045,0.723,2.264,0.057,0.116,0.209,0.6,0.004,0.016,1.0,1.0,89.99
+K13_abrupt_maneuver,ca6_fixed,Sharp 90-degree velocity direction change,2.621,59.626,335.136,3.675,8.739,16.994,58.828,2.428,46.41,0.638,0.672,115.52
+K14_transient_outlier,ca6_fixed,Single-frame 50px localized outlier,0.651,11.203,36.243,0.825,1.723,3.111,8.992,0.93,3.13,1.0,1.0,96.12
+K15_crossing_ambiguity_coast,ca6_fixed,3-frame prediction-only coast at crossing ambiguity,0.557,10.424,39.854,0.687,1.501,2.836,8.759,0.901,4.429,1.0,1.0,76.31
+K01_stationary,ca6_adaptive_r,"Stationary target at [320, 240]",0.343,4.951,29.77,0.424,0.891,1.756,6.129,1.285,4.096,1.0,1.0,98.53
+K02_constant_velocity,ca6_adaptive_r,"Constant velocity [100, 50] px/s",0.634,12.117,45.256,0.823,1.812,3.373,10.278,1.385,5.077,0.966,0.983,104.44
+K03_constant_acceleration,ca6_adaptive_r,"Constant acceleration [200, 100] px/s^2",0.762,10.554,102.55,0.943,2.069,4.392,17.508,1.019,4.116,0.983,1.0,119.39
+K04_sinusoidal_acceleration,ca6_adaptive_r,1 Hz sinusoidal orbital acceleration,20.179,462.762,4719.962,29.722,86.427,199.328,820.404,644.804,1269.626,0.069,0.069,127.72
+K05_direction_reversal,ca6_adaptive_r,Direction reversal at 1500 px/s^2,3.185,62.08,658.735,4.376,11.524,26.153,109.269,4.361,29.973,0.603,0.603,97.43
+K06_noisy_constant_velocity,ca6_adaptive_r,Constant velocity with sigma=2.5px noise,1.451,29.422,26.482,1.913,4.152,7.194,17.11,1.024,3.782,1.0,1.0,107.35
+K07_noisy_acceleration,ca6_adaptive_r,Acceleration with sigma=2.0px noise,1.786,22.675,154.605,2.207,4.516,8.743,30.489,1.324,6.937,0.931,0.983,108.7
+K08_0_5s_dropout,ca6_adaptive_r,0.5s dropout during accelerated motion,3.295,15.2,65.152,3.552,4.768,6.746,16.211,1.33,4.248,1.0,1.0,67.3
+K09_1_5s_dropout,ca6_adaptive_r,1.5s extended dropout testing covariance growth,33.552,52.694,54.97,34.573,38.846,44.621,64.939,1.747,3.809,1.0,1.0,41.77
+K10_variable_dt,ca6_adaptive_r,Variable sampling interval (12ms - 28ms),0.721,8.603,56.863,0.873,1.704,3.247,11.266,1.14,5.429,0.948,1.0,109.58
+K11_low_quality_high_r,ca6_adaptive_r,Low-quality degraded detections with 4px sigma,2.912,33.439,24.241,3.39,5.743,9.06,19.935,0.423,2.042,1.0,1.0,94.83
+K12_high_quality_low_r,ca6_adaptive_r,High-SNR subpixel detections with 0.05px sigma,0.053,1.068,9.053,0.073,0.187,0.408,1.604,0.098,0.332,1.0,1.0,77.09
+K13_abrupt_maneuver,ca6_adaptive_r,Sharp 90-degree velocity direction change,2.391,57.791,351.994,3.415,8.402,16.727,60.046,3.211,62.247,0.603,0.672,98.64
+K14_transient_outlier,ca6_adaptive_r,Single-frame 50px localized outlier,0.663,11.549,43.954,0.844,1.794,3.306,10.046,1.581,4.777,0.983,1.0,117.36
+K15_crossing_ambiguity_coast,ca6_adaptive_r,3-frame prediction-only coast at crossing ambiguity,0.573,10.702,47.173,0.712,1.578,3.037,9.802,1.343,6.844,0.909,1.0,90.61

@@ -1,0 +1,145 @@
+{
+  "summary_pairing": {
+    "rms_angular_error_deg": 7.5107,
+    "rms_pixel_error_px": 99.376,
+    "accepted_measurement_coverage_pct": 60.97,
+    "observable_measurement_coverage_pct": 60.97,
+    "mission_measurement_coverage_pct": 78.33,
+    "paired_metric_note": "CRITICAL: Tracking error must always be paired with coverage percentage."
+  },
+  "perception": {
+    "detection_precision": 0.3872,
+    "detection_recall_observable": 0.5871,
+    "detection_recall_mission": 0.3033,
+    "observable_measurement_coverage_pct": 60.97,
+    "mission_measurement_coverage_pct": 78.33,
+    "accepted_measurement_coverage_pct": 60.97,
+    "false_positive_count": 288,
+    "false_negative_count": 121,
+    "total_detections": 470,
+    "observable_frames_count": 310,
+    "active_frames_count": 600
+  },
+  "tracking": {
+    "rms_pixel_error_px": 99.376,
+    "p95_pixel_error_px": 244.33,
+    "maximum_pixel_error_px": 324.002,
+    "rms_angular_error_deg": 7.5107,
+    "severe_outlier_count_gt_5px": 310,
+    "pointing_error_populations": {
+      "all_active_frames": {
+        "rms_deg": 7.5107,
+        "p95_deg": 14.9894,
+        "max_deg": 16.3455,
+        "count": 600
+      },
+      "target_in_fov": {
+        "rms_deg": 1.5463,
+        "p95_deg": 3.8046,
+        "max_deg": 5.1994,
+        "count": 310
+      },
+      "locked_frames": {
+        "rms_deg": null,
+        "p95_deg": null,
+        "max_deg": null,
+        "count": 0
+      }
+    }
+  },
+  "lock": {
+    "acquisition_time_s": null,
+    "lock_retention_when_observable_pct": 58.71,
+    "mission_lock_retention_pct": 76.83,
+    "lock_retention_pct": 58.71,
+    "target_loss_count": 2,
+    "target_loss_reasons": {
+      "OUTSIDE_FOV": 0,
+      "INTENTIONAL_BLACKOUT": 0,
+      "DETECTOR_MISS": 0,
+      "ASSOCIATION_REJECTION": 2,
+      "ESTIMATOR_EXPIRATION": 0
+    }
+  },
+  "recovery": {
+    "reacquisition_time_s": 0.06,
+    "reacquisition_success_rate": 0.3333,
+    "reacquisition_attempts_count": 3,
+    "successful_reacquisitions_count": 1,
+    "mean_reacquisition_latency_s": 0.06,
+    "total_search_time_s": 2.18,
+    "total_search_angular_travel_deg": 9.7388,
+    "total_search_points_commanded": 109,
+    "confidence_region_at_success": "none",
+    "episodes": [
+      {
+        "start_time_s": 0.08,
+        "end_time_s": 0.84,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.76,
+        "observable_return_time_s": 0.08,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 4.5784,
+        "points_commanded": 38,
+        "confidence_region_at_exit": "none"
+      },
+      {
+        "start_time_s": 4.48,
+        "end_time_s": 4.54,
+        "success": true,
+        "final_state": "TRACK",
+        "search_duration_s": 0.06,
+        "observable_return_time_s": 4.48,
+        "reacquisition_latency_s": 0.06,
+        "search_angular_travel_deg": 0.0694,
+        "points_commanded": 3,
+        "confidence_region_at_exit": "none"
+      },
+      {
+        "start_time_s": 5.0,
+        "end_time_s": 6.36,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 1.36,
+        "observable_return_time_s": 5.0,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 5.091,
+        "points_commanded": 68,
+        "confidence_region_at_exit": "none"
+      }
+    ],
+    "covariance_coverage": {
+      "evaluation_frames_count": 109,
+      "fraction_inside_1sigma": 0.0,
+      "fraction_inside_2sigma": 0.0183,
+      "fraction_inside_95pct": 0.0183,
+      "fraction_inside_99pct": 0.0183,
+      "theoretical_targets": {
+        "1sigma": 0.3935,
+        "2sigma": 0.8647,
+        "95pct": 0.95,
+        "99pct": 0.99
+      }
+    }
+  },
+  "association": {
+    "false_lock_event_count": 1,
+    "false_lock_duration_s": 5.12,
+    "identity_switch_count": 7,
+    "false_lock_definition": "Tracking non-designated target continuously for >= 0.5s"
+  },
+  "control": {
+    "rms_commanded_angular_velocity_deg_s": 2.68,
+    "rms_angular_acceleration_deg_s2": 38.937,
+    "rms_angular_jerk_deg_s3": 2582.307,
+    "actuator_saturation_pct": 0.0
+  },
+  "performance": {
+    "detector_mean_latency_ms": 1.141,
+    "detector_p95_latency_ms": 1.804,
+    "total_pipeline_mean_latency_ms": 1.423,
+    "total_pipeline_p95_latency_ms": 2.283,
+    "benchmark_throughput_fps": 702.6
+  }
+}

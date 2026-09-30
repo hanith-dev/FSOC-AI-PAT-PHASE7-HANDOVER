@@ -1,0 +1,32 @@
+{
+  "phase": "PHASE 6 \u2014 PREDICTIVE SMOOTH GIMBAL CONTROL, LATENCY COMPENSATION AND ACTUATOR DYNAMICS",
+  "preflight_metrics": {
+    "s10_reacquisition_timestamp_s": 8.38,
+    "s10_reacquisition_latency_after_return_s": 1.38,
+    "s15_safety_baseline": {
+      "false_lock_duration_s": 0.0,
+      "identity_switch_count": 0,
+      "observable_lock_retention_mean_pct": 4.34,
+      "mission_lock_retention_mean_pct": 2.24
+    }
+  },
+  "control_modes_evaluated": [
+    "legacy_pid",
+    "filtered_pid",
+    "predictive_pid",
+    "predictive_smooth"
+  ],
+  "selected_default_mode": "predictive_smooth",
+  "actuator_limits": {
+    "max_rate_deg_s": 60.0,
+    "max_accel_deg_s2": 250.0,
+    "max_jerk_deg_s3": 2500.0
+  },
+  "jerk_suppression_factor": ">98% peak jerk reduction in dynamic scenarios",
+  "s09_coast_recovery": "Zero command spike, seamless transition",
+  "s15_safety_preservation": {
+    "false_lock_duration_s": 0.0,
+    "identity_switches": 0
+  },
+  "status": "VALIDATED_AND_FROZEN"
+}

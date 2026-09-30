@@ -1,0 +1,7 @@
+{
+  "pattern": "raster",
+  "speed": 10.0,
+  "range_h": 20.0,
+  "range_v": 15.0,
+  "step_size": 3.0
+}

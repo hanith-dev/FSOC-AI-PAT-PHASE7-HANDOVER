@@ -1,0 +1,79 @@
+{
+  "phase": "Phase 7 \u2014 Covariance-Guided Intelligent Reacquisition",
+  "timestamp": "2026-09-29 21:11:50",
+  "production_search_mode": "covariance_ellipse_scan",
+  "baseline_search_mode": "fixed_spiral",
+  "preflight_control_authority": {
+    "rate_limit_deg_s": 60.0,
+    "acceleration_limit_enforced": false,
+    "jerk_limit_enforced": false,
+    "search_command_type": "continuous_angular_offsets_deg"
+  },
+  "search_parameters": {
+    "scan_rate_deg_s": 2.5,
+    "angular_step_deg": 0.35,
+    "max_local_radius_deg": 2.5,
+    "max_duration_s": 2.0,
+    "trust_horizon_s": 0.35,
+    "confidence_progression": [
+      "1_sigma",
+      "2_sigma",
+      "95_percent",
+      "99_percent",
+      "fallback_bound"
+    ],
+    "chi2_scales": [
+      1.0,
+      2.0,
+      2.4477,
+      3.0349
+    ],
+    "fov_clipping": true,
+    "camera_geometry": {
+      "resolution": [
+        640,
+        480
+      ],
+      "fx": 3661.723149,
+      "fy": 3661.723149,
+      "cx": 320.0,
+      "cy": 240.0
+    }
+  },
+  "overall_performance": {
+    "fixed_spiral": {
+      "mean_reacquisition_latency_s": 0.1467,
+      "mean_angular_travel_deg": 9.4442,
+      "overall_success_rate": 0.0382
+    },
+    "covariance_guided": {
+      "mean_reacquisition_latency_s": 0.3357,
+      "mean_angular_travel_deg": 9.5942,
+      "overall_success_rate": 0.0655,
+      "latency_reduction_pct": -128.89,
+      "travel_reduction_pct": -1.59
+    }
+  },
+  "covariance_consistency_calibration": {
+    "observed_empirical": {
+      "fraction_1sigma": 0.2498,
+      "fraction_2sigma": 0.2567,
+      "fraction_95pct": 0.258,
+      "fraction_99pct": 0.258
+    },
+    "theoretical_chi2_targets": {
+      "1sigma": 0.3935,
+      "2sigma": 0.8647,
+      "95pct": 0.95,
+      "99pct": 0.99
+    }
+  },
+  "distractor_and_safety_summary": {
+    "s12_false_lock_duration_s": 0.0,
+    "s13_false_lock_duration_s": 0.0,
+    "s14_false_lock_duration_s": 0.0,
+    "s15_false_lock_duration_s": 0.0,
+    "identity_switches_total": 0,
+    "zero_false_locks_preserved": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mode": "robust_multifeature",
+  "chi2_gate_level": 9.21,
+  "confidence_level": 0.99,
+  "dof": 2,
+  "ambiguity_margin": 0.08,
+  "ambiguity_distance_check": false,
+  "switch_hysteresis_margin": 0.12,
+  "min_acquisition_confidence": 0.4,
+  "acquisition_confirmation_frames": 1,
+  "weights": {
+    "w_motion": 0.4,
+    "w_signal": 0.25,
+    "w_quality": 0.15,
+    "w_shape": 0.1,
+    "w_uncert": 0.1
+  },
+  "s_min_floor": 4.0,
+  "sigma_min_px": 2.0,
+  "initiation_expansion_window_frames": 15,
+  "initiation_gate_multiplier_initial": 4.0,
+  "initiation_gate_multiplier_settling": 2.0,
+  "coasting_gate_expansion_rate": 0.25,
+  "coasting_gate_expansion_max": 3.0
+}

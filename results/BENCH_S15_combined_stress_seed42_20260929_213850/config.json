@@ -1,0 +1,27 @@
+{
+  "scenario": {
+    "id": "S15_combined_stress",
+    "name": "S15 Combined Stress Mission",
+    "duration": 5.0,
+    "disturbances": {
+      "platform_vibration": 40,
+      "camera_jitter": 20,
+      "image_noise": 35,
+      "blur": 20,
+      "atmospheric_turbulence": 45,
+      "illumination_variation": 25
+    },
+    "initial_pan_deg": 0.0,
+    "initial_tilt_deg": 0.0
+  },
+  "dt": 0.02,
+  "seed": 42,
+  "localization_mode": "weighted_centroid",
+  "association_mode": "robust_multifeature",
+  "camera": {
+    "hfov_deg": 9.988925770862352,
+    "vfov_deg": 7.5,
+    "width": 640,
+    "height": 480
+  }
+}

@@ -1,0 +1,6 @@
+injected_latency_ms,injected_latency_s,expected_discrete_frames,discrete_frames_50hz,alignment_match,runner_buffer_status
+0,0.0,0,0,True,Controller Horizon Compensation Only (No Delay Buffer in Runner)
+20,0.02,1,1,True,Controller Horizon Compensation Only (No Delay Buffer in Runner)
+40,0.04,2,2,True,Controller Horizon Compensation Only (No Delay Buffer in Runner)
+60,0.06,3,3,True,Controller Horizon Compensation Only (No Delay Buffer in Runner)
+100,0.1,5,5,True,Controller Horizon Compensation Only (No Delay Buffer in Runner)

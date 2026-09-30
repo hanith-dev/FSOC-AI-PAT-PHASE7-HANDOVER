@@ -1,0 +1,26 @@
+{
+  "scenario": {
+    "id": "S09_temporary_dropout",
+    "name": "S09 Temporary Dropout",
+    "duration": 12.0,
+    "disturbances": {
+      "platform_vibration": 0,
+      "camera_jitter": 0,
+      "image_noise": 0,
+      "blur": 0,
+      "atmospheric_turbulence": 0,
+      "illumination_variation": 0
+    },
+    "initial_pan_deg": 0.0,
+    "initial_tilt_deg": 0.0
+  },
+  "dt": 0.02,
+  "seed": 42,
+  "localization_mode": "weighted_centroid",
+  "camera": {
+    "hfov_deg": 9.988925770862352,
+    "vfov_deg": 7.5,
+    "width": 640,
+    "height": 480
+  }
+}

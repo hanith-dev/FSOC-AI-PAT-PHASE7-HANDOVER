@@ -1,0 +1,289 @@
+{
+  "summary_pairing": {
+    "rms_angular_error_deg": 2.2133,
+    "rms_pixel_error_px": 145.307,
+    "accepted_measurement_coverage_pct": 17.68,
+    "observable_measurement_coverage_pct": 17.68,
+    "mission_measurement_coverage_pct": 18.14,
+    "paired_metric_note": "CRITICAL: Tracking error must always be paired with coverage percentage."
+  },
+  "perception": {
+    "detection_precision": 0.5512,
+    "detection_recall_observable": 0.1095,
+    "detection_recall_mission": 0.1079,
+    "observable_measurement_coverage_pct": 17.68,
+    "mission_measurement_coverage_pct": 18.14,
+    "accepted_measurement_coverage_pct": 17.68,
+    "false_positive_count": 57,
+    "false_negative_count": 526,
+    "total_detections": 127,
+    "observable_frames_count": 639,
+    "active_frames_count": 649
+  },
+  "tracking": {
+    "rms_pixel_error_px": 145.307,
+    "p95_pixel_error_px": 228.884,
+    "maximum_pixel_error_px": 249.167,
+    "rms_angular_error_deg": 2.2133,
+    "severe_outlier_count_gt_5px": 690,
+    "pointing_error_populations": {
+      "all_active_frames": {
+        "rms_deg": 2.2133,
+        "p95_deg": 3.5647,
+        "max_deg": 4.2892,
+        "count": 649
+      },
+      "target_in_fov": {
+        "rms_deg": 2.2564,
+        "p95_deg": 3.5429,
+        "max_deg": 3.8582,
+        "count": 690
+      },
+      "locked_frames": {
+        "rms_deg": null,
+        "p95_deg": null,
+        "max_deg": null,
+        "count": 0
+      }
+    }
+  },
+  "lock": {
+    "acquisition_time_s": null,
+    "lock_retention_when_observable_pct": 14.24,
+    "mission_lock_retention_pct": 14.29,
+    "lock_retention_pct": 14.24,
+    "target_loss_count": 14,
+    "target_loss_reasons": {
+      "OUTSIDE_FOV": 0,
+      "INTENTIONAL_BLACKOUT": 1,
+      "DETECTOR_MISS": 0,
+      "ASSOCIATION_REJECTION": 13,
+      "ESTIMATOR_EXPIRATION": 0
+    }
+  },
+  "recovery": {
+    "reacquisition_time_s": 0.285,
+    "reacquisition_success_rate": 0.2667,
+    "reacquisition_attempts_count": 15,
+    "successful_reacquisitions_count": 4,
+    "mean_reacquisition_latency_s": 0.285,
+    "total_search_time_s": 7.76,
+    "total_search_angular_travel_deg": 22.1975,
+    "total_search_points_commanded": 388,
+    "confidence_region_at_success": "1_sigma",
+    "episodes": [
+      {
+        "start_time_s": 0.08,
+        "end_time_s": 0.32,
+        "success": true,
+        "final_state": "TRACK",
+        "search_duration_s": 0.24,
+        "observable_return_time_s": 0.2,
+        "reacquisition_latency_s": 0.12,
+        "search_angular_travel_deg": 1.5723,
+        "points_commanded": 12,
+        "confidence_region_at_exit": "1_sigma"
+      },
+      {
+        "start_time_s": 0.54,
+        "end_time_s": 1.0,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.46,
+        "observable_return_time_s": 0.54,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 0.6234,
+        "points_commanded": 23,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 1.4,
+        "end_time_s": 1.9,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.5,
+        "observable_return_time_s": 1.4,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 0.415,
+        "points_commanded": 25,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 2.38,
+        "end_time_s": 2.74,
+        "success": true,
+        "final_state": "TRACK",
+        "search_duration_s": 0.36,
+        "observable_return_time_s": 2.38,
+        "reacquisition_latency_s": 0.36,
+        "search_angular_travel_deg": 0.5147,
+        "points_commanded": 18,
+        "confidence_region_at_exit": "1_sigma"
+      },
+      {
+        "start_time_s": 3.0,
+        "end_time_s": 3.6,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.6,
+        "observable_return_time_s": 3.0,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 1.7104,
+        "points_commanded": 30,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 4.12,
+        "end_time_s": 4.38,
+        "success": true,
+        "final_state": "TRACK",
+        "search_duration_s": 0.26,
+        "observable_return_time_s": 4.12,
+        "reacquisition_latency_s": 0.26,
+        "search_angular_travel_deg": 0.3583,
+        "points_commanded": 13,
+        "confidence_region_at_exit": "1_sigma"
+      },
+      {
+        "start_time_s": 4.6,
+        "end_time_s": 5.26,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.66,
+        "observable_return_time_s": null,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 2.7039,
+        "points_commanded": 33,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 5.98,
+        "end_time_s": 6.72,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.74,
+        "observable_return_time_s": 5.98,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 1.3505,
+        "points_commanded": 37,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 7.12,
+        "end_time_s": 7.64,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.52,
+        "observable_return_time_s": 7.12,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 0.6819,
+        "points_commanded": 26,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 8.26,
+        "end_time_s": 9.04,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.78,
+        "observable_return_time_s": 8.26,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 3.1121,
+        "points_commanded": 39,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 9.72,
+        "end_time_s": 10.12,
+        "success": true,
+        "final_state": "TRACK",
+        "search_duration_s": 0.4,
+        "observable_return_time_s": 9.72,
+        "reacquisition_latency_s": 0.4,
+        "search_angular_travel_deg": 0.9328,
+        "points_commanded": 20,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 10.36,
+        "end_time_s": 10.98,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.62,
+        "observable_return_time_s": 10.36,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 2.3029,
+        "points_commanded": 31,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 11.42,
+        "end_time_s": 11.92,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.5,
+        "observable_return_time_s": 11.42,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 1.0408,
+        "points_commanded": 25,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 12.2,
+        "end_time_s": 12.7,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.5,
+        "observable_return_time_s": 12.2,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 1.9814,
+        "points_commanded": 25,
+        "confidence_region_at_exit": "2_sigma"
+      },
+      {
+        "start_time_s": 13.36,
+        "end_time_s": 13.98,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.62,
+        "observable_return_time_s": 13.36,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 2.8971,
+        "points_commanded": 31,
+        "confidence_region_at_exit": "2_sigma"
+      }
+    ],
+    "covariance_coverage": {
+      "evaluation_frames_count": 355,
+      "fraction_inside_1sigma": 0.0,
+      "fraction_inside_2sigma": 0.0,
+      "fraction_inside_95pct": 0.0,
+      "fraction_inside_99pct": 0.0,
+      "theoretical_targets": {
+        "1sigma": 0.3935,
+        "2sigma": 0.8647,
+        "95pct": 0.95,
+        "99pct": 0.99
+      }
+    }
+  },
+  "association": {
+    "false_lock_event_count": 0,
+    "false_lock_duration_s": 0.0,
+    "identity_switch_count": 1,
+    "false_lock_definition": "Tracking non-designated target continuously for >= 0.5s"
+  },
+  "control": {
+    "rms_commanded_angular_velocity_deg_s": 2.944,
+    "rms_angular_acceleration_deg_s2": 47.816,
+    "rms_angular_jerk_deg_s3": 3191.378,
+    "actuator_saturation_pct": 0.0
+  },
+  "performance": {
+    "detector_mean_latency_ms": 1.691,
+    "detector_p95_latency_ms": 2.812,
+    "total_pipeline_mean_latency_ms": 2.136,
+    "total_pipeline_p95_latency_ms": 3.53,
+    "benchmark_throughput_fps": 468.1
+  }
+}

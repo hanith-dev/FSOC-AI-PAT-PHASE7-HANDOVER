@@ -1,0 +1,72 @@
+[
+  {
+    "scenario": "S15_combined_stress",
+    "seed": 42,
+    "rms_angular_error_deg": 6.0157,
+    "rms_pixel_error_px": 178.526,
+    "accepted_coverage_pct": 100.0,
+    "false_lock_events": 2,
+    "false_lock_duration_s": 12.62,
+    "identity_switches": 14,
+    "actuator_saturation_pct": 0.0,
+    "pipeline_latency_ms": 1.713,
+    "throughput_fps": 583.9,
+    "experiment_id": "BENCH_S15_combined_stress_seed42_20260919_160920"
+  },
+  {
+    "scenario": "S15_combined_stress",
+    "seed": 43,
+    "rms_angular_error_deg": 6.0197,
+    "rms_pixel_error_px": 179.35,
+    "accepted_coverage_pct": 100.0,
+    "false_lock_events": 2,
+    "false_lock_duration_s": 12.6,
+    "identity_switches": 12,
+    "actuator_saturation_pct": 0.0,
+    "pipeline_latency_ms": 1.458,
+    "throughput_fps": 685.9,
+    "experiment_id": "BENCH_S15_combined_stress_seed43_20260919_160949"
+  },
+  {
+    "scenario": "S15_combined_stress",
+    "seed": 44,
+    "rms_angular_error_deg": 6.0532,
+    "rms_pixel_error_px": 178.76,
+    "accepted_coverage_pct": 100.0,
+    "false_lock_events": 2,
+    "false_lock_duration_s": 12.64,
+    "identity_switches": 14,
+    "actuator_saturation_pct": 0.0,
+    "pipeline_latency_ms": 1.47,
+    "throughput_fps": 680.1,
+    "experiment_id": "BENCH_S15_combined_stress_seed44_20260919_161017"
+  },
+  {
+    "scenario": "S15_combined_stress",
+    "seed": 45,
+    "rms_angular_error_deg": 6.0517,
+    "rms_pixel_error_px": 179.339,
+    "accepted_coverage_pct": 100.0,
+    "false_lock_events": 2,
+    "false_lock_duration_s": 12.62,
+    "identity_switches": 14,
+    "actuator_saturation_pct": 0.0,
+    "pipeline_latency_ms": 1.346,
+    "throughput_fps": 742.7,
+    "experiment_id": "BENCH_S15_combined_stress_seed45_20260919_161047"
+  },
+  {
+    "scenario": "S15_combined_stress",
+    "seed": 46,
+    "rms_angular_error_deg": 6.0502,
+    "rms_pixel_error_px": 179.815,
+    "accepted_coverage_pct": 99.86,
+    "false_lock_events": 2,
+    "false_lock_duration_s": 12.62,
+    "identity_switches": 12,
+    "actuator_saturation_pct": 0.0,
+    "pipeline_latency_ms": 0.879,
+    "throughput_fps": 1138.3,
+    "experiment_id": "BENCH_S15_combined_stress_seed46_20260919_161113"
+  }
+]

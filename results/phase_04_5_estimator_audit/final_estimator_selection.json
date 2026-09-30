@@ -1,0 +1,46 @@
+{
+  "selected_estimator": "ca6_adaptive_r",
+  "status": "CERTIFIED_DEFAULT",
+  "justification": {
+    "acceleration_tracking": "Eliminates steady-state acceleration lag; error drops from 10.42 px to 0.76 px (92.7% reduction).",
+    "lead_prediction": "Superior lead-angle extrapolation at control latencies 20-100 ms (5.86 px vs 13.14 px).",
+    "maneuver_retention": "T10 coast frames reduced from 14 (0.28s) to 0 (0.00s), maintaining 100% track availability.",
+    "association_safety": "Preserves certified 0.00s false-lock duration across S12, S13, S14, and S15.",
+    "statistical_optimality": "NIS median 1.019 (98.3% pass within chi2 95% bound), avoiding CV4 filter divergence."
+  },
+  "tradeoffs_and_constraints": {
+    "long_horizon_extrapolation": "Extrapolation past 350 ms exhibits crossover on turning/orbital paths due to quadratic acceleration projection; lead-ahead horizons should be capped at <= 200 ms.",
+    "t07_dropout_traversal": "During total beacon optical extinction, an intersecting distractor will be transiently tracked for 0.34s before instant recovery to true beacon on frame 20; this is a consequence of line-of-sight intersection and cannot be solved without truth leakage."
+  },
+  "configuration": {
+    "mode": "ca6_adaptive_r",
+    "state_dimension": 6,
+    "state_ordering": [
+      "x",
+      "y",
+      "vx",
+      "vy",
+      "ax",
+      "ay"
+    ],
+    "units": {
+      "position": "px",
+      "velocity": "px/s",
+      "acceleration": "px/s^2"
+    },
+    "continuous_white_jerk_q_spectral_density": 10000.0,
+    "nominal_measurement_noise_std_px": 1.0,
+    "measurement_uncertainty_clamping_px": [
+      0.2,
+      5.0
+    ],
+    "quality_inflation_factors": {
+      "TOUCHING_SENSOR_EDGE": 2.0,
+      "SATURATED_CORE": 1.5,
+      "LOW_SNR": 1.5,
+      "PSF_FALLBACK": 2.0
+    },
+    "max_occlusion_timeout_sec": 2.0,
+    "max_position_uncertainty_sigma_px": 50.0
+  }
+}

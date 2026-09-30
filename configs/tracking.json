@@ -1,0 +1,9 @@
+{
+  "tracker": {
+    "type": "KalmanFilter",
+    "state_dim": 6,
+    "measurement_dim": 3,
+    "process_noise_std": 0.1,
+    "measurement_noise_std": 0.5
+  }
+}

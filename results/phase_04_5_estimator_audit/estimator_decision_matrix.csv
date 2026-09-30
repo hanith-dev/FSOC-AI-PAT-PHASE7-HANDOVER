@@ -1,0 +1,10 @@
+criterion,metric,cv4_fixed,ca6_fixed,ca6_adaptive_r,score_cv4_1to5,score_ca6_fix_1to5,score_ca6_ada_1to5,assessment
+A. Nominal Stability,S00 pointing error RMS,1.69 deg (FOV),0.30 deg (FOV),0.30 deg (FOV),3,5,5,CA6 reduces nominal tracking error by 82% due to rapid zero-lag tracking.
+B. Acceleration Tracking,K03 Position RMSE / Lag,10.42 px (high lag),0.76 px (lag-free),0.76 px (lag-free),1,5,5,CA6 model captures dynamic 200 px/s^2 acceleration with 92.7% error reduction.
+C. Short-Horizon Prediction (<=100ms),Mean Pred RMSE at 20-100ms,13.1 px (20ms) / 20.2 px (100ms),5.6 px (20ms) / 11.4 px (100ms),5.9 px (20ms) / 11.6 px (100ms),2,5,5,Both CA6 variants outperform CV4 by ~50% in lead-angle extrapolation up to 100ms.
+D. Long-Horizon Prediction (>=400ms),Pred RMSE at 500ms (K03 vs Non-accel),85.5 px (Mean) / 72.1 px (K03),80.3 px (Mean) / 17.5 px (K03),80.3 px (Mean) / 17.5 px (K03),3,4,4,"K03 is vastly superior on CA6 (17.5 vs 72.1 px). However, on non-accelerated/turning trajectories, CA6 extrapolates a^2 causing crossover above 350ms."
+E. Association Safety,"T04, S12-S15 False Lock Durations",0.00s false lock across all,0.00s false lock across all,0.00s false lock across all,5,5,5,"Zero false lock is maintained by all three estimators across S12, S13, S14, S15 and T04."
+F. Dropout & Maneuver Behavior,T07 duration / T10 retention,"T07: 0.12s, T10: 14 coast frames","T07: 0.34s, T10: 13 coast frames","T07: 0.34s, T10: 0 coast frames (100% retention)",3,2,4,Adaptive R allows CA6 to retain continuous tracking on abrupt maneuvers (T10: 0 coast vs 13-14). T07 distractor traversal is transient in all models.
+G. Covariance Consistency,K03 NIS 95% pass rate & Median,22.4% pass (Median NIS 53.5),98.3% pass (Median NIS 1.02),98.3% pass (Median NIS 1.02),1,5,5,CV4 diverges heavily under dynamic motion. CA6 maintains statistical optimality (NIS ~ 1.0).
+H. Runtime Latency,Mean execution latency,100.9 us,80.8 us,95.8 us,5,5,5,"All three estimators run in <0.11 ms, consuming <6% of the 2.0 ms real-time frame budget."
+TOTAL SCORE,Out of 40,,,,23,36,38,ca6_adaptive_r selected as production default

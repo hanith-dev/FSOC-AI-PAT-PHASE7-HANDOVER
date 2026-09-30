@@ -1,0 +1,8 @@
+scenario,fixed_spiral_travel_deg,cov_ellipse_travel_deg,travel_reduction_pct,fixed_spiral_latency_s,cov_ellipse_latency_s,latency_reduction_pct,fixed_spiral_success_rate,cov_ellipse_success_rate,fixed_points_commanded,cov_points_commanded
+S00_nominal,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0
+S09_temporary_dropout,2.6683,2.8047,-5.11,0.0,0.0,0.0,0.0,0.0,55.0,55.0
+S10_fov_exit_reentry,0.2771,0.6399,-130.93,0.0,0.0,0.0,0.0,0.0,43.0,43.0
+S12_moving_distractor,9.7388,9.1273,6.28,0.06,0.04,33.33,0.3333,0.3333,109.0,108.0
+S13_crossing_distractor,2.7529,5.0658,-84.02,0.32,0.34,-6.25,0.5,0.3333,34.0,72.0
+S14_brighter_distractor,11.3204,13.7393,-21.37,0.0,0.0,0.0,0.0,0.0,76.0,97.0
+S15_combined_stress,25.3872,25.3381,0.19,0.1467,0.3357,-128.89,0.1147,0.1965,289.2,356.0

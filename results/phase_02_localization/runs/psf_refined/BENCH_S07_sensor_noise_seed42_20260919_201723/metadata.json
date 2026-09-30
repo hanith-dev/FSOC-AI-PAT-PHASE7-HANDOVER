@@ -1,0 +1,25 @@
+{
+  "experiment_id": "BENCH_S07_sensor_noise_seed42_20260919_201723",
+  "scenario": "S07_sensor_noise",
+  "scenario_name": "S07 Sensor Noise & Blur",
+  "seed": 42,
+  "git_commit": "e154dcd789232c3610bdd079ad82cf55bc2bb576",
+  "timestamp": "20260919_201723",
+  "simulation_dt": 0.02,
+  "simulation_duration": 12.0,
+  "total_frames": 600,
+  "algorithm_configuration": {
+    "detector": "OpenCVDetector (HSV)",
+    "localization_mode": "psf_refined",
+    "association": "Phase 0D Baseline (Nearest-Neighbor / Largest-Area)",
+    "estimator": "KalmanFilter2D (CV model)",
+    "controller": "Discrete Anti-Windup PID (Kp=1.5, Ki=0.05, Kd=0.1)",
+    "fsm": "TrackingStateMachine (Threshold=0.15 deg, LockDuration=1.0s)"
+  },
+  "runtime_environment": {
+    "os": "Windows 11",
+    "python_version": "3.12.10",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "machine": "AMD64"
+  }
+}

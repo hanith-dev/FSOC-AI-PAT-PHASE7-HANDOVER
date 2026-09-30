@@ -1,0 +1,87 @@
+{
+  "summary_pairing": {
+    "rms_angular_error_deg": 2.7281,
+    "rms_pixel_error_px": 168.536,
+    "accepted_measurement_coverage_pct": 19.34,
+    "observable_measurement_coverage_pct": 19.34,
+    "mission_measurement_coverage_pct": 20.0,
+    "paired_metric_note": "CRITICAL: Tracking error must always be paired with coverage percentage."
+  },
+  "perception": {
+    "detection_precision": 0.68,
+    "detection_recall_observable": 0.1604,
+    "detection_recall_mission": 0.1511,
+    "observable_measurement_coverage_pct": 19.34,
+    "mission_measurement_coverage_pct": 20.0,
+    "accepted_measurement_coverage_pct": 19.34,
+    "false_positive_count": 16,
+    "false_negative_count": 171,
+    "total_detections": 50,
+    "observable_frames_count": 212,
+    "active_frames_count": 225
+  },
+  "tracking": {
+    "rms_pixel_error_px": 168.536,
+    "p95_pixel_error_px": 249.405,
+    "maximum_pixel_error_px": 279.422,
+    "rms_angular_error_deg": 2.7281,
+    "severe_outlier_count_gt_5px": 237,
+    "pointing_error_populations": {
+      "all_active_frames": {
+        "rms_deg": 2.7281,
+        "p95_deg": 4.0454,
+        "max_deg": 4.3635,
+        "count": 225
+      },
+      "target_in_fov": {
+        "rms_deg": 2.6199,
+        "p95_deg": 3.891,
+        "max_deg": 4.3635,
+        "count": 237
+      },
+      "locked_frames": {
+        "rms_deg": null,
+        "p95_deg": null,
+        "max_deg": null,
+        "count": 0
+      }
+    }
+  },
+  "lock": {
+    "acquisition_time_s": null,
+    "lock_retention_when_observable_pct": 15.09,
+    "mission_lock_retention_pct": 15.2,
+    "lock_retention_pct": 15.09,
+    "target_loss_count": 5,
+    "target_loss_reasons": {
+      "OUTSIDE_FOV": 0,
+      "INTENTIONAL_BLACKOUT": 1,
+      "DETECTOR_MISS": 0,
+      "ASSOCIATION_REJECTION": 4,
+      "ESTIMATOR_EXPIRATION": 0
+    }
+  },
+  "recovery": {
+    "reacquisition_time_s": "NOT YET AVAILABLE",
+    "reacquisition_capability": "NOT YET AVAILABLE"
+  },
+  "association": {
+    "false_lock_event_count": 0,
+    "false_lock_duration_s": 0.0,
+    "identity_switch_count": 1,
+    "false_lock_definition": "Tracking non-designated target continuously for >= 0.5s"
+  },
+  "control": {
+    "rms_commanded_angular_velocity_deg_s": 3.823,
+    "rms_angular_acceleration_deg_s2": 79.789,
+    "rms_angular_jerk_deg_s3": 5315.532,
+    "actuator_saturation_pct": 0.0
+  },
+  "performance": {
+    "detector_mean_latency_ms": 1.531,
+    "detector_p95_latency_ms": 2.9,
+    "total_pipeline_mean_latency_ms": 1.837,
+    "total_pipeline_p95_latency_ms": 3.399,
+    "benchmark_throughput_fps": 544.4
+  }
+}

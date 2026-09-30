@@ -1,0 +1,133 @@
+{
+  "summary_pairing": {
+    "rms_angular_error_deg": 1.566,
+    "rms_pixel_error_px": 61.918,
+    "accepted_measurement_coverage_pct": 95.39,
+    "observable_measurement_coverage_pct": 95.39,
+    "mission_measurement_coverage_pct": 79.83,
+    "paired_metric_note": "CRITICAL: Tracking error must always be paired with coverage percentage."
+  },
+  "perception": {
+    "detection_precision": 0.9937,
+    "detection_recall_observable": 0.9539,
+    "detection_recall_mission": 0.9084,
+    "observable_measurement_coverage_pct": 95.39,
+    "mission_measurement_coverage_pct": 79.83,
+    "accepted_measurement_coverage_pct": 95.39,
+    "false_positive_count": 3,
+    "false_negative_count": 23,
+    "total_detections": 479,
+    "observable_frames_count": 499,
+    "active_frames_count": 524
+  },
+  "tracking": {
+    "rms_pixel_error_px": 61.918,
+    "p95_pixel_error_px": 78.812,
+    "maximum_pixel_error_px": 328.442,
+    "rms_angular_error_deg": 1.566,
+    "severe_outlier_count_gt_5px": 575,
+    "pointing_error_populations": {
+      "all_active_frames": {
+        "rms_deg": 1.566,
+        "p95_deg": 4.5891,
+        "max_deg": 6.0478,
+        "count": 524
+      },
+      "target_in_fov": {
+        "rms_deg": 0.9323,
+        "p95_deg": 1.2246,
+        "max_deg": 4.8651,
+        "count": 575
+      },
+      "locked_frames": {
+        "rms_deg": null,
+        "p95_deg": null,
+        "max_deg": null,
+        "count": 0
+      }
+    }
+  },
+  "lock": {
+    "acquisition_time_s": null,
+    "lock_retention_when_observable_pct": 94.39,
+    "mission_lock_retention_pct": 78.5,
+    "lock_retention_pct": 94.39,
+    "target_loss_count": 2,
+    "target_loss_reasons": {
+      "OUTSIDE_FOV": 0,
+      "INTENTIONAL_BLACKOUT": 1,
+      "DETECTOR_MISS": 0,
+      "ASSOCIATION_REJECTION": 1,
+      "ESTIMATOR_EXPIRATION": 0
+    }
+  },
+  "recovery": {
+    "reacquisition_time_s": null,
+    "reacquisition_success_rate": 0.0,
+    "reacquisition_attempts_count": 2,
+    "successful_reacquisitions_count": 0,
+    "mean_reacquisition_latency_s": null,
+    "total_search_time_s": 1.1,
+    "total_search_angular_travel_deg": 2.8047,
+    "total_search_points_commanded": 55,
+    "confidence_region_at_success": "none",
+    "episodes": [
+      {
+        "start_time_s": 0.72,
+        "end_time_s": 0.96,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.24,
+        "observable_return_time_s": 0.72,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 1.5894,
+        "points_commanded": 12,
+        "confidence_region_at_exit": "1_sigma"
+      },
+      {
+        "start_time_s": 4.2,
+        "end_time_s": 5.06,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.86,
+        "observable_return_time_s": null,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 1.2153,
+        "points_commanded": 43,
+        "confidence_region_at_exit": "2_sigma"
+      }
+    ],
+    "covariance_coverage": {
+      "evaluation_frames_count": 12,
+      "fraction_inside_1sigma": 1.0,
+      "fraction_inside_2sigma": 1.0,
+      "fraction_inside_95pct": 1.0,
+      "fraction_inside_99pct": 1.0,
+      "theoretical_targets": {
+        "1sigma": 0.3935,
+        "2sigma": 0.8647,
+        "95pct": 0.95,
+        "99pct": 0.99
+      }
+    }
+  },
+  "association": {
+    "false_lock_event_count": 0,
+    "false_lock_duration_s": 0.0,
+    "identity_switch_count": 1,
+    "false_lock_definition": "Tracking non-designated target continuously for >= 0.5s"
+  },
+  "control": {
+    "rms_commanded_angular_velocity_deg_s": 2.016,
+    "rms_angular_acceleration_deg_s2": 33.54,
+    "rms_angular_jerk_deg_s3": 2320.173,
+    "actuator_saturation_pct": 0.0
+  },
+  "performance": {
+    "detector_mean_latency_ms": 0.981,
+    "detector_p95_latency_ms": 1.59,
+    "total_pipeline_mean_latency_ms": 1.22,
+    "total_pipeline_p95_latency_ms": 2.06,
+    "benchmark_throughput_fps": 819.6
+  }
+}

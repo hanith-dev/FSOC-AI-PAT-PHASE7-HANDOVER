@@ -1,0 +1,193 @@
+{
+  "summary_pairing": {
+    "rms_angular_error_deg": 7.5375,
+    "rms_pixel_error_px": 184.867,
+    "accepted_measurement_coverage_pct": 12.46,
+    "observable_measurement_coverage_pct": 12.46,
+    "mission_measurement_coverage_pct": 7.14,
+    "paired_metric_note": "CRITICAL: Tracking error must always be paired with coverage percentage."
+  },
+  "perception": {
+    "detection_precision": 0.22,
+    "detection_recall_observable": 0.037,
+    "detection_recall_mission": 0.0169,
+    "observable_measurement_coverage_pct": 12.46,
+    "mission_measurement_coverage_pct": 7.14,
+    "accepted_measurement_coverage_pct": 12.46,
+    "false_positive_count": 39,
+    "false_negative_count": 260,
+    "total_detections": 50,
+    "observable_frames_count": 297,
+    "active_frames_count": 649
+  },
+  "tracking": {
+    "rms_pixel_error_px": 184.867,
+    "p95_pixel_error_px": 281.228,
+    "maximum_pixel_error_px": 349.861,
+    "rms_angular_error_deg": 7.5375,
+    "severe_outlier_count_gt_5px": 348,
+    "pointing_error_populations": {
+      "all_active_frames": {
+        "rms_deg": 7.5375,
+        "p95_deg": 12.618,
+        "max_deg": 12.7327,
+        "count": 649
+      },
+      "target_in_fov": {
+        "rms_deg": 2.8855,
+        "p95_deg": 4.3586,
+        "max_deg": 5.5076,
+        "count": 348
+      },
+      "locked_frames": {
+        "rms_deg": null,
+        "p95_deg": null,
+        "max_deg": null,
+        "count": 0
+      }
+    }
+  },
+  "lock": {
+    "acquisition_time_s": null,
+    "lock_retention_when_observable_pct": 8.75,
+    "mission_lock_retention_pct": 4.43,
+    "lock_retention_pct": 8.75,
+    "target_loss_count": 6,
+    "target_loss_reasons": {
+      "OUTSIDE_FOV": 0,
+      "INTENTIONAL_BLACKOUT": 1,
+      "DETECTOR_MISS": 0,
+      "ASSOCIATION_REJECTION": 5,
+      "ESTIMATOR_EXPIRATION": 0
+    }
+  },
+  "recovery": {
+    "reacquisition_time_s": 0.18,
+    "reacquisition_success_rate": 0.1429,
+    "reacquisition_attempts_count": 7,
+    "successful_reacquisitions_count": 1,
+    "mean_reacquisition_latency_s": 0.18,
+    "total_search_time_s": 4.38,
+    "total_search_angular_travel_deg": 24.9211,
+    "total_search_points_commanded": 219,
+    "confidence_region_at_success": "none",
+    "episodes": [
+      {
+        "start_time_s": 0.08,
+        "end_time_s": 0.38,
+        "success": true,
+        "final_state": "TRACK",
+        "search_duration_s": 0.3,
+        "observable_return_time_s": 0.2,
+        "reacquisition_latency_s": 0.18,
+        "search_angular_travel_deg": 1.9828,
+        "points_commanded": 15,
+        "confidence_region_at_exit": "none"
+      },
+      {
+        "start_time_s": 0.62,
+        "end_time_s": 1.02,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.4,
+        "observable_return_time_s": 0.62,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 1.4469,
+        "points_commanded": 20,
+        "confidence_region_at_exit": "none"
+      },
+      {
+        "start_time_s": 1.74,
+        "end_time_s": 2.44,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.7,
+        "observable_return_time_s": 1.74,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 3.1053,
+        "points_commanded": 35,
+        "confidence_region_at_exit": "none"
+      },
+      {
+        "start_time_s": 2.88,
+        "end_time_s": 4.04,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 1.16,
+        "observable_return_time_s": 2.88,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 7.7486,
+        "points_commanded": 58,
+        "confidence_region_at_exit": "none"
+      },
+      {
+        "start_time_s": 4.34,
+        "end_time_s": 4.82,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.48,
+        "observable_return_time_s": 4.34,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 1.5968,
+        "points_commanded": 24,
+        "confidence_region_at_exit": "none"
+      },
+      {
+        "start_time_s": 5.24,
+        "end_time_s": 6.36,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 1.12,
+        "observable_return_time_s": 5.52,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 7.4548,
+        "points_commanded": 56,
+        "confidence_region_at_exit": "none"
+      },
+      {
+        "start_time_s": 13.3,
+        "end_time_s": 13.52,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.22,
+        "observable_return_time_s": 13.3,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 1.5859,
+        "points_commanded": 11,
+        "confidence_region_at_exit": "none"
+      }
+    ],
+    "covariance_coverage": {
+      "evaluation_frames_count": 209,
+      "fraction_inside_1sigma": 0.0,
+      "fraction_inside_2sigma": 0.0,
+      "fraction_inside_95pct": 0.0,
+      "fraction_inside_99pct": 0.0,
+      "theoretical_targets": {
+        "1sigma": 0.3935,
+        "2sigma": 0.8647,
+        "95pct": 0.95,
+        "99pct": 0.99
+      }
+    }
+  },
+  "association": {
+    "false_lock_event_count": 0,
+    "false_lock_duration_s": 0.0,
+    "identity_switch_count": 5,
+    "false_lock_definition": "Tracking non-designated target continuously for >= 0.5s"
+  },
+  "control": {
+    "rms_commanded_angular_velocity_deg_s": 4.368,
+    "rms_angular_acceleration_deg_s2": 70.665,
+    "rms_angular_jerk_deg_s3": 4779.325,
+    "actuator_saturation_pct": 0.0
+  },
+  "performance": {
+    "detector_mean_latency_ms": 1.409,
+    "detector_p95_latency_ms": 2.583,
+    "total_pipeline_mean_latency_ms": 1.662,
+    "total_pipeline_p95_latency_ms": 3.215,
+    "benchmark_throughput_fps": 601.7
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "selected_default_estimator": "ca6_adaptive_r",
+  "state_dimension": 6,
+  "state_ordering": [
+    "x",
+    "y",
+    "vx",
+    "vy",
+    "ax",
+    "ay"
+  ],
+  "units": {
+    "position": "px",
+    "velocity": "px/s",
+    "acceleration": "px/s^2"
+  },
+  "continuous_white_jerk_q_spectral_density": 10000.0,
+  "nominal_measurement_noise_std_px": 1.0,
+  "measurement_uncertainty_clamping_px": [
+    0.2,
+    5.0
+  ],
+  "quality_inflation_factors": {
+    "TOUCHING_SENSOR_EDGE": 2.0,
+    "SATURATED_CORE": 1.5,
+    "LOW_SNR": 1.5,
+    "PSF_FALLBACK": 2.0
+  },
+  "max_occlusion_timeout_sec": 2.0,
+  "max_position_uncertainty_sigma_px": 50.0
+}

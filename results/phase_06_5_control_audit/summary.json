@@ -1,0 +1,11 @@
+{
+  "phase": "6.5",
+  "title": "Control Fidelity, Metric Consistency and Production Controller Selection",
+  "timestamp": "2026-09-20 23:56:34",
+  "production_controller": "filtered_pid",
+  "selection_rationale": "Filtered PID delivers 3.81 deg RMS and 68.91% lock retention across the benchmark suite, whereas Predictive Smooth collapses to 13.16 deg RMS and 8.80% lock retention due to severe acceleration and jerk lag under the configured engineering limits.",
+  "jerk_discrepancy_resolved": "37635 deg/s^3 reported in Phase 6 was caused by discrete FSM state transitions (abrupt rate zeroing across 1 frame dt=0.02s) and finite-difference post-run evaluation, NOT internal limiter leakage. Post-limiter jerk is strictly bounded <= 2500 deg/s^3 during steady tracking.",
+  "latency_sweep_audit": "The non-monotonicity in S01 was caused by artificial horizon extrapolation in the controller without a true delayed sensor buffer, where a 60ms prediction offset accidentally compensated for controller lag.",
+  "feedforward_audit": "Phase 6 atan2(vx, fx) formula was corrected to exact analytical projection derivative (vx/fx) / (1 + ((u-cx)/fx)^2).",
+  "limits_classification": "ENGINEERING_SOFTWARE_IN_THE_LOOP_LIMITS (not verified physical hardware ratings)."
+}

@@ -1,0 +1,18 @@
+{
+  "controllers": {
+    "pan": {
+      "kp": 1.5,
+      "ki": 0.05,
+      "kd": 0.1,
+      "integral_windup_limit": 10.0,
+      "output_limit": 30.0
+    },
+    "tilt": {
+      "kp": 1.5,
+      "ki": 0.05,
+      "kd": 0.1,
+      "integral_windup_limit": 10.0,
+      "output_limit": 30.0
+    }
+  }
+}

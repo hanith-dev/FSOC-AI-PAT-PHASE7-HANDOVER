@@ -1,0 +1,79 @@
+[
+  {
+    "simulation_time": 0.0,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "SEARCHING",
+    "to_state": "DETECTED",
+    "angular_error_deg": 2.0022
+  },
+  {
+    "simulation_time": 0.02,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "DETECTED",
+    "to_state": "ACQUIRING",
+    "angular_error_deg": 1.9396
+  },
+  {
+    "simulation_time": 1.0,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "ACQUIRING",
+    "to_state": "TRACKING",
+    "angular_error_deg": 0.4877
+  },
+  {
+    "simulation_time": 2.0,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "TRACKING",
+    "to_state": "TARGET_LOST",
+    "angular_error_deg": 0.088
+  },
+  {
+    "simulation_time": 3.06,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "TARGET_LOST",
+    "to_state": "DETECTED",
+    "angular_error_deg": 0.0367
+  },
+  {
+    "simulation_time": 3.08,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "DETECTED",
+    "to_state": "SEARCHING",
+    "angular_error_deg": 0.0
+  },
+  {
+    "simulation_time": 7.0,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "SEARCHING",
+    "to_state": "DETECTED",
+    "angular_error_deg": 1.1431
+  },
+  {
+    "simulation_time": 7.02,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "DETECTED",
+    "to_state": "ACQUIRING",
+    "angular_error_deg": 0.9868
+  },
+  {
+    "simulation_time": 7.42,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "ACQUIRING",
+    "to_state": "TRACKING",
+    "angular_error_deg": 0.4939
+  },
+  {
+    "simulation_time": 8.92,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "TRACKING",
+    "to_state": "LOCKED",
+    "angular_error_deg": 0.1112
+  },
+  {
+    "simulation_time": 9.44,
+    "event_type": "FSM_TRANSITION",
+    "from_state": "LOCKED",
+    "to_state": "TRACKING",
+    "angular_error_deg": 0.1518
+  }
+]

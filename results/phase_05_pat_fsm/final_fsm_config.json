@@ -1,0 +1,22 @@
+{
+  "candidate_confirmation_frames": 2,
+  "acquire_confirmation_frames": 3,
+  "reacquire_confirmation_frames": 2,
+  "candidate_timeout_frames": 3,
+  "lock_angular_error_entry_deg": 0.15,
+  "lock_duration_entry_s": 0.4,
+  "lock_max_pos_sigma_px": 5.0,
+  "lock_min_consecutive_accepted": 5,
+  "lock_angular_error_exit_deg": 0.35,
+  "lock_max_pos_sigma_exit_px": 12.0,
+  "coast_timeout_s": 0.2,
+  "coast_max_pos_sigma_px": 25.0,
+  "search_config": {
+    "pattern_type": "spiral",
+    "angular_step_deg": 0.25,
+    "scan_rate_deg_s": 1.0,
+    "max_local_radius_deg": 2.0,
+    "max_duration_s": 2.0,
+    "dwell_time_s": 0.0
+  }
+}

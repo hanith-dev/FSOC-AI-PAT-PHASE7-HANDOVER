@@ -1,0 +1,26 @@
+{
+  "experiment_id": "BENCH_S11_stationary_distractor_seed42_20260919_205339",
+  "scenario": "S11_stationary_distractor",
+  "scenario_name": "S11 Stationary Distractor",
+  "seed": 42,
+  "git_commit": "cf305a4982e81589a4a3cc72694609044c39f58a",
+  "timestamp": "20260919_205339",
+  "simulation_dt": 0.02,
+  "simulation_duration": 12.0,
+  "total_frames": 600,
+  "algorithm_configuration": {
+    "detector": "OpenCVDetector (HSV)",
+    "localization_mode": "weighted_centroid",
+    "association_mode": "mahalanobis_only",
+    "association": "AssociationEngine (mahalanobis_only)",
+    "estimator": "KalmanFilter2D (CV model)",
+    "controller": "Discrete Anti-Windup PID (Kp=1.5, Ki=0.05, Kd=0.1)",
+    "fsm": "TrackingStateMachine (Threshold=0.15 deg, LockDuration=1.0s)"
+  },
+  "runtime_environment": {
+    "os": "Windows 11",
+    "python_version": "3.12.10",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "machine": "AMD64"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "audit": "Phase 4.5 Estimator Safety, Metric Consistency & Default Selection Audit",
+  "timestamp": "2026-09-20",
+  "decision": "ca6_adaptive_r",
+  "decision_scores": {
+    "cv4_fixed": 23,
+    "ca6_fixed": 36,
+    "ca6_adaptive_r": 38
+  },
+  "t07_audit": {
+    "phase_3_5_baseline_claim_s": 0.08,
+    "phase_3_5_raw_artifact_s": 0.12,
+    "cv4_exact_s": 0.12,
+    "ca6_fixed_exact_s": 0.34,
+    "ca6_adaptive_r_exact_s": 0.34,
+    "root_cause": "Line-of-sight intersection during blackout + higher post-latch state velocity/acceleration tracking the distractor."
+  },
+  "long_horizon_prediction": {
+    "crossover_horizon_ms": 350,
+    "k03_acceleration_500ms_rmse_px": {
+      "cv4": 72.139,
+      "ca6_adaptive": 17.508
+    },
+    "overall_mean_500ms_rmse_px": {
+      "cv4": 85.45,
+      "ca6_adaptive": 80.336
+    }
+  },
+  "s04_closed_loop": {
+    "target_in_fov_rms_deg": {
+      "cv4": 2.6782,
+      "ca6_fixed": 2.5974,
+      "ca6_adaptive_r": 2.5974
+    },
+    "all_active_frames_rms_deg": {
+      "cv4": 37.6675,
+      "ca6_fixed": 33.4911,
+      "ca6_adaptive_r": 39.7292
+    },
+    "explanation": "Controller bandwidth and camera VFOV (12 deg) limit target stay in FOV to ~3.6% under 2.0 m/s^2 acceleration regardless of estimator."
+  }
+}

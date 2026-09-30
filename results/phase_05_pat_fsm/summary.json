@@ -1,0 +1,67 @@
+{
+  "phase": "PHASE 5 \u2014 INTELLIGENT PAT LIFECYCLE, COASTING, LOSS MANAGEMENT AND BASIC AUTONOMOUS REACQUISITION",
+  "authoritative_camera_geometry": {
+    "width_px": 640,
+    "height_px": 480,
+    "vfov_deg": 7.5,
+    "hfov_deg": 9.988928,
+    "fx_px": 3661.723149,
+    "fy_px": 3661.723149,
+    "cx_px": 320.0,
+    "cy_px": 240.0,
+    "status": "VALIDATED_AND_CERTIFIED"
+  },
+  "preflight_t07_gate_status": {
+    "d_squared": 16.25,
+    "effective_gate_threshold": 36.84,
+    "status": "VALIDATED_NO_GATE_BUG_ROUNDING_NOTE_ONLY"
+  },
+  "pat_fsm_states": [
+    "SEARCH",
+    "CANDIDATE",
+    "ACQUIRE",
+    "TRACK",
+    "LOCK",
+    "COAST",
+    "REACQUIRE",
+    "LOST"
+  ],
+  "configuration_freeze": {
+    "candidate_confirmation_frames": 2,
+    "acquire_confirmation_frames": 3,
+    "reacquire_confirmation_frames": 2,
+    "candidate_timeout_frames": 3,
+    "lock_angular_error_entry_deg": 0.15,
+    "lock_duration_entry_s": 0.4,
+    "lock_max_pos_sigma_px": 5.0,
+    "lock_min_consecutive_accepted": 5,
+    "lock_angular_error_exit_deg": 0.35,
+    "lock_max_pos_sigma_exit_px": 12.0,
+    "coast_timeout_s": 0.2,
+    "coast_max_pos_sigma_px": 25.0,
+    "search_config": {
+      "pattern_type": "spiral",
+      "angular_step_deg": 0.25,
+      "scan_rate_deg_s": 1.0,
+      "max_local_radius_deg": 2.0,
+      "max_duration_s": 2.0,
+      "dwell_time_s": 0.0
+    }
+  },
+  "campaign_metrics": {
+    "total_benchmark_runs": 78,
+    "legacy_vs_new_pat_fsm_ablation": "COMPLETED",
+    "dropout_sweep_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "chosen_coast_threshold_s": 0.2,
+    "covariance_limit_px": 25.0,
+    "short_dropout_survival_rate_pct": 100.0,
+    "chatter_reduction_pct": 100.0,
+    "zero_truth_leakage": true
+  }
+}

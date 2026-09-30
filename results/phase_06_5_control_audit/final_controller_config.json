@@ -1,0 +1,27 @@
+{
+  "production_controller": "filtered_pid",
+  "description": "Production Filtered PID with derivative-on-measurement kick protection and deadband shaping.",
+  "gimbal_limits": {
+    "max_rate_deg_s": 60.0,
+    "max_accel_deg_s2": 250.0,
+    "max_jerk_deg_s3": 2500.0,
+    "limit_type": "ENGINEERING_SOFTWARE_IN_THE_LOOP_LIMITS"
+  },
+  "pid_gains": {
+    "kp": 0.85,
+    "ki": 0.05,
+    "kd": 0.12,
+    "derivative_filter_alpha": 0.25,
+    "anti_windup_integral_limit": 10.0,
+    "deadband_deg": 0.015
+  },
+  "feedforward": {
+    "enabled": false,
+    "analytical_formula": "(v_x / f_x) / (1.0 + ((x - c_x) / f_x)**2)"
+  },
+  "default_mode": "filtered_pid",
+  "latency_compensation": {
+    "injected_latency_mode": "disabled_in_production",
+    "prediction_horizon_clamped_max_s": 0.04
+  }
+}

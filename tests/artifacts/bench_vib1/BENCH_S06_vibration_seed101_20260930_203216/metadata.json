@@ -1,0 +1,29 @@
+{
+  "experiment_id": "BENCH_S06_vibration_seed101_20260930_203216",
+  "scenario": "S06_vibration",
+  "scenario_name": "S06 Platform Vibration",
+  "seed": 101,
+  "git_commit": "UNKNOWN_COMMIT",
+  "timestamp": "20260930_203216",
+  "simulation_dt": 0.02,
+  "simulation_duration": 2.5,
+  "total_frames": 125,
+  "algorithm_configuration": {
+    "detector": "OpenCVDetector (HSV)",
+    "localization_mode": "weighted_centroid",
+    "association_mode": "robust_multifeature",
+    "association": "AssociationEngine (robust_multifeature)",
+    "estimator": "KalmanFilter2D (ca6_adaptive_r)",
+    "controller": "GimbalController (filtered_pid)",
+    "controller_mode": "filtered_pid",
+    "injected_latency_s": 0.0,
+    "fsm": "PATLifecycleStateMachine (new_pat_fsm)",
+    "reacquisition_search": "covariance_ellipse_scan"
+  },
+  "runtime_environment": {
+    "os": "Darwin 27.0.0",
+    "python_version": "3.14.7",
+    "processor": "arm",
+    "machine": "arm64"
+  }
+}

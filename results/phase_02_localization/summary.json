@@ -1,0 +1,53 @@
+{
+  "baseline": {
+    "total_samples": 120,
+    "valid_samples": 120,
+    "coverage_pct": 100.0,
+    "failure_count": 0,
+    "rmse_px": 0.8587,
+    "mae_px": 0.8053,
+    "p50_px": 0.7697,
+    "p95_px": 1.2734,
+    "max_px": 2.3717,
+    "bias_x_px": 0.4913,
+    "bias_y_px": 0.4388,
+    "jitter_std_px": 0.2982,
+    "mean_latency_ms": 0.0983,
+    "p95_latency_ms": 0.1517,
+    "uncertainty_error_correlation": -0.2169
+  },
+  "weighted_centroid": {
+    "total_samples": 120,
+    "valid_samples": 120,
+    "coverage_pct": 100.0,
+    "failure_count": 0,
+    "rmse_px": 0.2796,
+    "mae_px": 0.1133,
+    "p50_px": 0.0207,
+    "p95_px": 0.621,
+    "max_px": 1.6021,
+    "bias_x_px": 0.0139,
+    "bias_y_px": -0.0137,
+    "jitter_std_px": 0.2556,
+    "mean_latency_ms": 0.2613,
+    "p95_latency_ms": 0.5327,
+    "uncertainty_error_correlation": 0.8476
+  },
+  "psf_refined": {
+    "total_samples": 120,
+    "valid_samples": 120,
+    "coverage_pct": 100.0,
+    "failure_count": 0,
+    "rmse_px": 0.2084,
+    "mae_px": 0.0756,
+    "p50_px": 0.0075,
+    "p95_px": 0.4351,
+    "max_px": 1.3169,
+    "bias_x_px": 0.0103,
+    "bias_y_px": -0.0038,
+    "jitter_std_px": 0.1942,
+    "mean_latency_ms": 0.4067,
+    "p95_latency_ms": 0.774,
+    "uncertainty_error_correlation": 0.8745
+  }
+}

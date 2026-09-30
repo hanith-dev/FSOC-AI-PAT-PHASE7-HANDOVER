@@ -1,0 +1,33 @@
+{
+  "camera": {
+    "resolution": {
+      "width": 640,
+      "height": 480
+    },
+    "fov": {
+      "horizontal_deg": 10.0,
+      "vertical_deg": 7.5
+    },
+    "position": [0.0, 0.0, 0.0],
+    "rotation": [0.0, 0.0, 0.0]
+  },
+  "gimbal": {
+    "limits": {
+      "pan_min_deg": -180.0,
+      "pan_max_deg": 180.0,
+      "tilt_min_deg": -45.0,
+      "tilt_max_deg": 45.0
+    },
+    "speed": {
+      "max_pan_speed_deg_s": 30.0,
+      "max_tilt_speed_deg_s": 30.0
+    }
+  },
+  "capture": {
+    "resolution": {
+      "width": 256,
+      "height": 256
+    },
+    "frame_rate_hz": 15.0
+  }
+}

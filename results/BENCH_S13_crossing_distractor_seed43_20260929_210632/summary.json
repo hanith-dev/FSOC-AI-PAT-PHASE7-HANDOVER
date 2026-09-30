@@ -1,0 +1,133 @@
+{
+  "summary_pairing": {
+    "rms_angular_error_deg": 1.4534,
+    "rms_pixel_error_px": 61.605,
+    "accepted_measurement_coverage_pct": 89.08,
+    "observable_measurement_coverage_pct": 89.08,
+    "mission_measurement_coverage_pct": 86.17,
+    "paired_metric_note": "CRITICAL: Tracking error must always be paired with coverage percentage."
+  },
+  "perception": {
+    "detection_precision": 0.9594,
+    "detection_recall_observable": 0.8596,
+    "detection_recall_mission": 0.8267,
+    "observable_measurement_coverage_pct": 89.08,
+    "mission_measurement_coverage_pct": 86.17,
+    "accepted_measurement_coverage_pct": 89.08,
+    "false_positive_count": 21,
+    "false_negative_count": 63,
+    "total_detections": 517,
+    "observable_frames_count": 577,
+    "active_frames_count": 600
+  },
+  "tracking": {
+    "rms_pixel_error_px": 61.605,
+    "p95_pixel_error_px": 65.985,
+    "maximum_pixel_error_px": 331.054,
+    "rms_angular_error_deg": 1.4534,
+    "severe_outlier_count_gt_5px": 577,
+    "pointing_error_populations": {
+      "all_active_frames": {
+        "rms_deg": 1.4534,
+        "p95_deg": 3.5055,
+        "max_deg": 6.0478,
+        "count": 600
+      },
+      "target_in_fov": {
+        "rms_deg": 0.9259,
+        "p95_deg": 1.0042,
+        "max_deg": 4.9023,
+        "count": 577
+      },
+      "locked_frames": {
+        "rms_deg": null,
+        "p95_deg": null,
+        "max_deg": null,
+        "count": 0
+      }
+    }
+  },
+  "lock": {
+    "acquisition_time_s": null,
+    "lock_retention_when_observable_pct": 88.56,
+    "mission_lock_retention_pct": 85.17,
+    "lock_retention_pct": 88.56,
+    "target_loss_count": 2,
+    "target_loss_reasons": {
+      "OUTSIDE_FOV": 0,
+      "INTENTIONAL_BLACKOUT": 0,
+      "DETECTOR_MISS": 0,
+      "ASSOCIATION_REJECTION": 2,
+      "ESTIMATOR_EXPIRATION": 0
+    }
+  },
+  "recovery": {
+    "reacquisition_time_s": 0.32,
+    "reacquisition_success_rate": 0.5,
+    "reacquisition_attempts_count": 2,
+    "successful_reacquisitions_count": 1,
+    "mean_reacquisition_latency_s": 0.32,
+    "total_search_time_s": 0.68,
+    "total_search_angular_travel_deg": 2.7529,
+    "total_search_points_commanded": 34,
+    "confidence_region_at_success": "none",
+    "episodes": [
+      {
+        "start_time_s": 0.68,
+        "end_time_s": 1.04,
+        "success": false,
+        "final_state": "SEARCH",
+        "search_duration_s": 0.36,
+        "observable_return_time_s": 0.68,
+        "reacquisition_latency_s": null,
+        "search_angular_travel_deg": 2.4634,
+        "points_commanded": 18,
+        "confidence_region_at_exit": "none"
+      },
+      {
+        "start_time_s": 5.54,
+        "end_time_s": 5.86,
+        "success": true,
+        "final_state": "TRACK",
+        "search_duration_s": 0.32,
+        "observable_return_time_s": 5.54,
+        "reacquisition_latency_s": 0.32,
+        "search_angular_travel_deg": 0.2895,
+        "points_commanded": 16,
+        "confidence_region_at_exit": "none"
+      }
+    ],
+    "covariance_coverage": {
+      "evaluation_frames_count": 34,
+      "fraction_inside_1sigma": 0.5294,
+      "fraction_inside_2sigma": 0.5588,
+      "fraction_inside_95pct": 0.5588,
+      "fraction_inside_99pct": 0.5588,
+      "theoretical_targets": {
+        "1sigma": 0.3935,
+        "2sigma": 0.8647,
+        "95pct": 0.95,
+        "99pct": 0.99
+      }
+    }
+  },
+  "association": {
+    "false_lock_event_count": 0,
+    "false_lock_duration_s": 0.0,
+    "identity_switch_count": 9,
+    "false_lock_definition": "Tracking non-designated target continuously for >= 0.5s"
+  },
+  "control": {
+    "rms_commanded_angular_velocity_deg_s": 2.141,
+    "rms_angular_acceleration_deg_s2": 31.982,
+    "rms_angular_jerk_deg_s3": 2194.157,
+    "actuator_saturation_pct": 0.0
+  },
+  "performance": {
+    "detector_mean_latency_ms": 1.167,
+    "detector_p95_latency_ms": 1.809,
+    "total_pipeline_mean_latency_ms": 1.422,
+    "total_pipeline_p95_latency_ms": 2.319,
+    "benchmark_throughput_fps": 703.1
+  }
+}

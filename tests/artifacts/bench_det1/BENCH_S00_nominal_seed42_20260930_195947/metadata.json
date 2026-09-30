@@ -1,0 +1,29 @@
+{
+  "experiment_id": "BENCH_S00_nominal_seed42_20260930_195947",
+  "scenario": "S00_nominal",
+  "scenario_name": "S00 Nominal Static",
+  "seed": 42,
+  "git_commit": "UNKNOWN_COMMIT",
+  "timestamp": "20260930_195947",
+  "simulation_dt": 0.02,
+  "simulation_duration": 3.0,
+  "total_frames": 150,
+  "algorithm_configuration": {
+    "detector": "OpenCVDetector (HSV)",
+    "localization_mode": "weighted_centroid",
+    "association_mode": "robust_multifeature",
+    "association": "AssociationEngine (robust_multifeature)",
+    "estimator": "KalmanFilter2D (ca6_adaptive_r)",
+    "controller": "GimbalController (filtered_pid)",
+    "controller_mode": "filtered_pid",
+    "injected_latency_s": 0.0,
+    "fsm": "PATLifecycleStateMachine (new_pat_fsm)",
+    "reacquisition_search": "covariance_ellipse_scan"
+  },
+  "runtime_environment": {
+    "os": "Darwin 27.0.0",
+    "python_version": "3.14.7",
+    "processor": "arm",
+    "machine": "arm64"
+  }
+}

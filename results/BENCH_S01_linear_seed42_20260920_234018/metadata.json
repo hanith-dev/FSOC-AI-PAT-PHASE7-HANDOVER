@@ -1,0 +1,28 @@
+{
+  "experiment_id": "BENCH_S01_linear_seed42_20260920_234018",
+  "scenario": "S01_linear",
+  "scenario_name": "S01 Linear Motion",
+  "seed": 42,
+  "git_commit": "463b23c3938c717f5af255f687e8b701357b7de9",
+  "timestamp": "20260920_234018",
+  "simulation_dt": 0.02,
+  "simulation_duration": 10.0,
+  "total_frames": 500,
+  "algorithm_configuration": {
+    "detector": "OpenCVDetector (HSV)",
+    "localization_mode": "weighted_centroid",
+    "association_mode": "robust_multifeature",
+    "association": "AssociationEngine (robust_multifeature)",
+    "estimator": "KalmanFilter2D (ca6_adaptive_r)",
+    "controller": "GimbalController (predictive_smooth)",
+    "controller_mode": "predictive_smooth",
+    "injected_latency_s": 0.06,
+    "fsm": "PATLifecycleStateMachine (new_pat_fsm)"
+  },
+  "runtime_environment": {
+    "os": "Windows 11",
+    "python_version": "3.12.10",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "machine": "AMD64"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kp": 1.5,
+  "ki": 0.05,
+  "kd": 0.1,
+  "integral_limit": 20.0,
+  "deadband_deg": 0.01,
+  "tau_d_s": 0.04,
+  "min_prediction_horizon_s": 0.02,
+  "max_prediction_horizon_s": 0.2,
+  "default_prediction_horizon_s": 0.04,
+  "engineering_actuator_limits": {
+    "max_rate_deg_s": 60.0,
+    "max_accel_deg_s2": 250.0,
+    "max_jerk_deg_s3": 2500.0
+  },
+  "default_mode": "predictive_smooth"
+}

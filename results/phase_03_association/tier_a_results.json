@@ -1,0 +1,677 @@
+{
+  "T01_nominal_single_track": {
+    "description": "Single target moving across frame at steady velocity",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0023
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0105
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.024
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0325
+      }
+    }
+  },
+  "T02_parallel_distractor": {
+    "description": "Target and distractor on parallel trajectories separated by 80px",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0042
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0106
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.035
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0444
+      }
+    }
+  },
+  "T03_crossing_target_brighter": {
+    "description": "Distractor crosses trajectory with lower SNR/confidence than target",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0041
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0108
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0354
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0447
+      }
+    }
+  },
+  "T04_crossing_distractor_brighter": {
+    "description": "Distractor crosses with higher SNR/brightness than target",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 1,
+        "false_latches": 29,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 3.33,
+        "mean_latency_ms": 0.004
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 1,
+        "false_latches": 29,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 3.33,
+        "mean_latency_ms": 0.0106
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 1,
+        "false_latches": 29,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 3.33,
+        "mean_latency_ms": 0.0342
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 0,
+        "false_latches": 30,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 0.0,
+        "mean_latency_ms": 0.0444
+      }
+    }
+  },
+  "T05_crossing_identical_snr": {
+    "description": "Crossing distractor with identical photometric characteristics",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.004
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0103
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0343
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0446
+      }
+    }
+  },
+  "T06_dropout_stationary_distractor": {
+    "description": "Target drops out for 10 frames with stationary distractor 40px away",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 20,
+        "correct_associations": 10,
+        "false_latches": 20,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 50.0,
+        "mean_latency_ms": 0.0033
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 0,
+        "coasting_frames": 10,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0101
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 0,
+        "coasting_frames": 10,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0331
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 0,
+        "coasting_frames": 10,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0387
+      }
+    }
+  },
+  "T07_dropout_crossing_distractor": {
+    "description": "Target drops out for 10 frames while moving distractor passes through its path",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 10,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0032
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 10,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0101
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 4,
+        "coasting_frames": 6,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0316
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 4,
+        "coasting_frames": 6,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0393
+      }
+    }
+  },
+  "T08_clutter_burst": {
+    "description": "High-velocity clutter burst of 3 spurious candidates for 1 frame",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0018
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0095
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0234
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0336
+      }
+    }
+  },
+  "T09_persistent_low_snr_clutter": {
+    "description": "Cluster of 3 low-confidence clutter points orbiting optical center",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0055
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.012
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.057
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0661
+      }
+    }
+  },
+  "T10_target_abrupt_maneuver": {
+    "description": "Target performs sharp 90-degree heading maneuver at frame 15",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0016
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0094
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 16,
+        "false_latches": 0,
+        "coasting_frames": 14,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 53.33,
+        "mean_latency_ms": 0.0253
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 16,
+        "false_latches": 0,
+        "coasting_frames": 14,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 53.33,
+        "mean_latency_ms": 0.0302
+      }
+    }
+  },
+  "T11_acquisition_3_candidates": {
+    "description": "Initial acquisition with 3 candidates, target has superior SNR and central position",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 20,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0048
+      },
+      "euclidean_prediction": {
+        "total_frames": 20,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0111
+      },
+      "mahalanobis_only": {
+        "total_frames": 20,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0446
+      },
+      "robust_multifeature": {
+        "total_frames": 20,
+        "target_present_frames": 20,
+        "correct_associations": 20,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0545
+      }
+    }
+  },
+  "T12_ambiguous_costs": {
+    "description": "Target accompanied by near-identical cost twin testing ambiguity rejection",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 25,
+        "target_present_frames": 25,
+        "correct_associations": 25,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0022
+      },
+      "euclidean_prediction": {
+        "total_frames": 25,
+        "target_present_frames": 25,
+        "correct_associations": 25,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0096
+      },
+      "mahalanobis_only": {
+        "total_frames": 25,
+        "target_present_frames": 25,
+        "correct_associations": 25,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0243
+      },
+      "robust_multifeature": {
+        "total_frames": 25,
+        "target_present_frames": 25,
+        "correct_associations": 25,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0361
+      }
+    }
+  },
+  "T13_subgate_oscillation": {
+    "description": "Distractor oscillates right at statistical gate boundary",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.004
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0113
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0352
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.044
+      }
+    }
+  },
+  "T14_large_measurement_uncertainty": {
+    "description": "Target tracking under large localized uncertainty and measurement jitter",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0017
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0237
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0359
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0318
+      }
+    }
+  },
+  "T15_adjacent_birth": {
+    "description": "Distractor spawns 8px from active target track and then diverges",
+    "modes": {
+      "legacy_simple": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0033
+      },
+      "euclidean_prediction": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.01
+      },
+      "mahalanobis_only": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0299
+      },
+      "robust_multifeature": {
+        "total_frames": 30,
+        "target_present_frames": 30,
+        "correct_associations": 30,
+        "false_latches": 0,
+        "coasting_frames": 0,
+        "ambiguous_triggers": 0,
+        "accuracy_pct": 100.0,
+        "mean_latency_ms": 0.0396
+      }
+    }
+  }
+}

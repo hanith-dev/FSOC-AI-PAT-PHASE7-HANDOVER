@@ -1,0 +1,19 @@
+category,metric_name,unit,cv4_fixed,ca6_fixed,ca6_adaptive_r,notes
+Tier_A_Controlled,mean_position_rmse_overall,px,11.619,4.566,4.833,Mean across all 15 controlled sequences
+Tier_A_Controlled,k03_constant_acceleration_pos_rmse,px,10.421,0.762,0.762,Constant acceleration 200 px/s^2
+Prediction_Horizon,mean_prediction_rmse_20ms,px,13.137,5.588,5.856,Overall mean extrapolation error
+Prediction_Horizon,mean_prediction_rmse_100ms,px,20.169,11.365,11.628,Overall mean extrapolation error
+Prediction_Horizon,mean_prediction_rmse_200ms,px,31.425,22.3,22.539,Overall mean extrapolation error
+Prediction_Horizon,mean_prediction_rmse_500ms,px,85.45,80.349,80.336,Overall mean extrapolation error
+Closed_Loop_S04,s04_target_in_fov_rms,deg,2.6782,2.5974,2.5974,Error conditioned on target inside camera FOV
+Closed_Loop_S04,s04_target_in_fov_p95,deg,4.5487,4.6368,4.6368,95th percentile conditioned on in FOV
+Closed_Loop_S04,s04_all_active_frames_rms,deg,37.6675,33.4911,39.7292,Unconditioned active frames including out-of-FOV
+Closed_Loop_S00,s00_target_in_fov_rms,deg,1.6941,0.3005,0.3003,Nominal tracking performance
+Association_Safety,t04_wrong_accept_count,count,0,0,0,Brighter distractor crossing
+Association_Safety,t07_wrong_accept_duration,s,0.12,0.34,0.34,Dropout crossing distractor
+Association_Safety,t10_coasting_frames,frames,14,13,0,Target abrupt 90 deg maneuver
+Association_Safety,s12_false_lock_duration,s,0.0,0.0,0.0,Moving distractor closed-loop
+Association_Safety,s13_false_lock_duration,s,0.0,0.0,0.0,Crossing distractor closed-loop
+Association_Safety,s14_false_lock_duration,s,0.0,0.0,0.0,Brighter distractor closed-loop
+Association_Safety,s15_false_lock_duration,s,0.0,0.0,0.0,Combined stress closed-loop
+Computational_Cost,mean_step_latency,us,104.9,83.4,97.4,Single update/predict step latency

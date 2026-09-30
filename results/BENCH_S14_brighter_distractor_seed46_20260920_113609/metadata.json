@@ -1,0 +1,26 @@
+{
+  "experiment_id": "BENCH_S14_brighter_distractor_seed46_20260920_113609",
+  "scenario": "S14_brighter_distractor",
+  "scenario_name": "S14 Brighter Distractor",
+  "seed": 46,
+  "git_commit": "47ccd6c5651332b5221abee27fdb70c84f0324cf",
+  "timestamp": "20260920_113609",
+  "simulation_dt": 0.02,
+  "simulation_duration": 10.0,
+  "total_frames": 500,
+  "algorithm_configuration": {
+    "detector": "OpenCVDetector (HSV)",
+    "localization_mode": "weighted_centroid",
+    "association_mode": "robust_multifeature",
+    "association": "AssociationEngine (robust_multifeature)",
+    "estimator": "KalmanFilter2D (ca6_adaptive_r)",
+    "controller": "Discrete Anti-Windup PID (Kp=1.5, Ki=0.05, Kd=0.1)",
+    "fsm": "TrackingStateMachine (legacy_fsm)"
+  },
+  "runtime_environment": {
+    "os": "Windows 11",
+    "python_version": "3.12.10",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "machine": "AMD64"
+  }
+}

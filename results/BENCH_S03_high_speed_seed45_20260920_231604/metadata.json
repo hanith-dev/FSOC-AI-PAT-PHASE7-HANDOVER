@@ -1,0 +1,28 @@
+{
+  "experiment_id": "BENCH_S03_high_speed_seed45_20260920_231604",
+  "scenario": "S03_high_speed",
+  "scenario_name": "S03 High-Speed Flyby",
+  "seed": 45,
+  "git_commit": "a1115cbb5d521b134c6cf3857d3bae1eec705649",
+  "timestamp": "20260920_231604",
+  "simulation_dt": 0.02,
+  "simulation_duration": 10.0,
+  "total_frames": 500,
+  "algorithm_configuration": {
+    "detector": "OpenCVDetector (HSV)",
+    "localization_mode": "weighted_centroid",
+    "association_mode": "robust_multifeature",
+    "association": "AssociationEngine (robust_multifeature)",
+    "estimator": "KalmanFilter2D (ca6_adaptive_r)",
+    "controller": "GimbalController (legacy_pid)",
+    "controller_mode": "legacy_pid",
+    "injected_latency_s": 0.0,
+    "fsm": "PATLifecycleStateMachine (new_pat_fsm)"
+  },
+  "runtime_environment": {
+    "os": "Windows 11",
+    "python_version": "3.12.10",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "machine": "AMD64"
+  }
+}

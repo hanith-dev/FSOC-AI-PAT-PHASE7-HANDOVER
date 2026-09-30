@@ -1,0 +1,13 @@
+{
+  "model": {
+    "type": "YOLOv8",
+    "weights_path": "models/best.pt",
+    "confidence_threshold": 0.5,
+    "iou_threshold": 0.45
+  },
+  "inference": {
+    "device": "cpu",
+    "batch_size": 1,
+    "half_precision": false
+  }
+}

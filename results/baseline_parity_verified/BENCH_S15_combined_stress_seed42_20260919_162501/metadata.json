@@ -1,0 +1,24 @@
+{
+  "experiment_id": "BENCH_S15_combined_stress_seed42_20260919_162501",
+  "scenario": "S15_combined_stress",
+  "scenario_name": "S15 Combined Stress Mission",
+  "seed": 42,
+  "git_commit": "69557ff0b664c899aa6bc6fff0ac826b6f294bea",
+  "timestamp": "20260919_162501",
+  "simulation_dt": 0.02,
+  "simulation_duration": 14.0,
+  "total_frames": 700,
+  "algorithm_configuration": {
+    "detector": "OpenCVDetector (HSV)",
+    "association": "Phase 0D Baseline (Nearest-Neighbor / Largest-Area)",
+    "estimator": "KalmanFilter2D (CV model)",
+    "controller": "Discrete Anti-Windup PID (Kp=1.5, Ki=0.05, Kd=0.1)",
+    "fsm": "TrackingStateMachine (Threshold=0.15 deg, LockDuration=1.0s)"
+  },
+  "runtime_environment": {
+    "os": "Windows 11",
+    "python_version": "3.12.10",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "machine": "AMD64"
+  }
+}
